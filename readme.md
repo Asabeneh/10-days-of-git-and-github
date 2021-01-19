@@ -13,8 +13,27 @@
     - [Moving file and directory](#moving-file-and-directory)
     - [Delete file and directory](#delete-file-and-directory)
 - [Day 2](#day-2)
+  - [Git Command](#git-command)
+    - [git config](#git-config)
+    - [git init](#git-init)
+    - [git status](#git-status)
+    - [git log](#git-log)
+    - [git add](#git-add)
+    - [git commit](#git-commit)
+    - [git remote add](#git-remote-add)
+    - [git push](#git-push)
+    - [git pull](#git-pull)
+    - [git branch](#git-branch)
+    - [git checkout](#git-checkout)
+    - [git merge](#git-merge)
+    - [pull request](#pull-request)
 - [Day 3](#day-3)
+  - [GitHub page](#github-page)
+  - [GitHub wiki](#github-wiki)
+  - [GitHub markdown](#github-markdown)
 - [Day 4](#day-4)
+  - [Collaborating on GitHub](#collaborating-on-github)
+  - [GitHub workflow](#github-workflow)
 - [Day 5](#day-5)
 - [Day 6](#day-6)
 - [Day 7](#day-7)
@@ -342,13 +361,51 @@ backups    day-1  day-3      day-4      day-5      day-6  day-8  second-day.txt
 backups-2  day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 ```
 
-_Well done, now you knew basic command lines_
+_Congratulations! Now you knew basic command lines_
 
 # Day 2
 
+## Git Command
+
+### git config
+
+### git init
+
+### git status
+
+### git log
+
+### git add
+
+### git commit
+
+### git remote add
+
+### git push
+
+### git pull
+
+### git branch
+
+### git checkout
+
+### git merge
+
+### pull request
+
 # Day 3
 
+## GitHub page
+
+## GitHub wiki
+
+## GitHub markdown
+
 # Day 4
+
+## Collaborating on GitHub
+
+## GitHub workflow
 
 # Day 5
 
