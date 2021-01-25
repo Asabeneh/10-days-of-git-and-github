@@ -18,11 +18,8 @@
 <small>Support the **author** to create more educational materials</small>  
 <a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
 
-<a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.jpg' alt='Paypal Logo' style="width:10%"/></a>
-
 </div>
 
-- [<a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>](#)
 - [Day 1](#day-1)
   - [Basic Command Lines](#basic-command-lines)
     - [Current working directory](#current-working-directory)
@@ -60,27 +57,6 @@
     - [19. Rename Branch](#19-rename-branch)
     - [20. Deleting Branch](#20-deleting-branch)
     - [21. Renaming commit](#21-renaming-commit)
-  - [Git cheat sheet:](#git-cheat-sheet)
-- [Day 3](#day-3)
-  - [Git repository user interface features](#git-repository-user-interface-features)
-- [Day 4](#day-4)
-  - [GitHub page](#github-page)
-- [Day 5](#day-5)
-  - [Documenting on GitHub](#documenting-on-github)
-  - [GitHub Markdown](#github-markdown)
-  - [GitHub wiki](#github-wiki)
-- [Day 6](#day-6)
-  - [Advanced git features](#advanced-git-features)
-- [Day 7](#day-7)
-  - [Collaborating on GitHub](#collaborating-on-github)
-- [Day 8](#day-8)
-  - [GitHub workflow](#github-workflow)
-- [Day 9](#day-9)
-  - [Connecting GitHub with Heroku](#connecting-github-with-heroku)
-- [Day 10](#day-10)
-  <<<<<<< HEAD - [19. Rename Branch](#19-rename-branch) - [20. Deleting Branch](#20-deleting-branch) - [21. Renaming commit](#21-renaming-commit)
-  =======
-  > > > > > > > 8aeb028556438e5463cc5467e495d5f8c3260260
   - [Git cheat sheet:](#git-cheat-sheet)
 - [Day 3](#day-3)
   - [Git repository user interface features](#git-repository-user-interface-features)
