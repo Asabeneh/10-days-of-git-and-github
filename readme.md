@@ -8,14 +8,15 @@
   </a>
 
 <sub>Author:<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> First Edition: Nov 25, 2021</small>
+<small> First Edition: Jan 25, 2021</small>
 </sub>
 
 </div>
 
 <div>
 
-<small>Support **Asabeneh** to create more educational materials</small>
+<small>Support the **author** to create more educational materials</small>  
+<a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.jpg' alt='Paypal Logo' style="width:10%"/></a>
 
 </div>
 
@@ -52,17 +53,25 @@
     - [15. Push](#15-push)
     - [16. Merge](#16-merge)
     - [17. Pull](#17-pull)
+    - [18. Git clone](#18-git-clone)
   - [Git cheat sheet:](#git-cheat-sheet)
-    - [pull request](#pull-request)
 - [Day 3](#day-3)
-  - [Advanced git features](#advanced-git-features)
-  - [GitHub page](#github-page)
-  - [GitHub wiki](#github-wiki)
-  - [GitHub markdown](#github-markdown)
+  - [Git repository user interface features](#git-repository-user-interface-features)
 - [Day 4](#day-4)
-  - [Collaborating on GitHub](#collaborating-on-github)
-  - [GitHub workflow](#github-workflow)
+  - [GitHub page](#github-page)
 - [Day 5](#day-5)
+  - [Documenting on GitHub](#documenting-on-github)
+  - [GitHub Markdown](#github-markdown)
+  - [GitHub wiki](#github-wiki)
+- [Day 6](#day-6)
+  - [Advanced git features](#advanced-git-features)
+- [Day 7](#day-7)
+  - [Collaborating on GitHub](#collaborating-on-github)
+- [Day 8](#day-8)
+  - [GitHub workflow](#github-workflow)
+- [Day 9](#day-9)
+  - [Connecting GitHub with Heroku](#connecting-github-with-heroku)
+- [Day 10](#day-10)
 
 # Day 1
 
@@ -591,6 +600,17 @@ If your team merges new features to the develop, then you will be behind, now yo
 
 If you are a sole developer that works by yourself then you can test the _git pull_ command by modifying some of the files from your remote repository and pull it using the _git pull_ command.
 
+### 18. Git clone
+
+GitHub allows to download a project using a URL. It is the same as downloading by clicking a download button from a website. To clone, go to desktop or any location and write the command _git clone URL_.
+
+For instance, to clone this repository, you need to run the following command
+
+```sh
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~$ cd Desktop
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop$ git clone https://github.com/Asabeneh/10-days-of-git-and-github.git
+```
+
 _Congratulations! Now, you have a solid foundation of Git and GitHub_
 
 ## Git cheat sheet:
@@ -640,32 +660,68 @@ git checkout 01e7ba -- filename
 git remote add anyname repositoryUrl
 ```
 
-### pull request
-
 # Day 3
 
-## Advanced git features
+## Git repository user interface features
+
+Familiarize yourself to GitHub account and repository available features.
+Git has account setting and repository setting. Navigate through the available features.
+
+Check the available repository features by clicking each buttons.
+
+![](./images/github-repository-ui_1.png)
+
+Check what is available on your GitHub account settings
+
+![](./images/github-repository-ui_2.png)
+
+# Day 4
 
 ## GitHub page
 
-Every GitHub repository allows you to generate a URL of your project. For instance, this a country project GitHub page.
+Every GitHub repository allows you to generate a URL of your project. For instance, this [URL](https://asabeneh.github.io/10-days-of-git-and-github/) has been generated from this project GitHub page. To generate GitHub page URL, you should have an index.html at the top level inside the project.
+
+First go to the setting of this repository and then click on it. Go all the way down until you get the GitHub pages section, then select the master
+![](./images/github-page.png)
+
+After you select the master, a save button will appear and click save.
+
+![](./images/github-page-save.png)
+
+After saving, a GitHub page URL will be generated automatically. That is your URL for that specific project.
+
+![](./images/github-page-save.png)
+
+# Day 5
+
+## Documenting on GitHub
+
+## GitHub Markdown
+
+Markdown files can be used to write documentation or anything. The markdown file extension is .md
+
+Markdown is an HTML-like markup language that allows to write text and render it on a browser. If you are familiar with HTML, you pick the syntax of markdown in a matter of minutes.
+Follow this [link](https://guides.github.com/features/mastering-markdown/) to learn about markdown
 
 ## GitHub wiki
 
 Every GitHub repository has a wiki page. A wiki page allows you to write or document.
 ![](./images/wiki.png)
 
-## GitHub markdown
+# Day 6
 
-Markdown files can be used to write documentation or anything. The markdown file extension is .md
+## Advanced git features
 
-Markdown is an HTML-like markup language that allows to write text and render it on a browser. If you are familiar with HTML, you pick the syntax of markdown in a matter of minutes.
-Follow this [link](https://guides.github.com/features/mastering-markdown/)to learn about markdown
-
-# Day 4
+# Day 7
 
 ## Collaborating on GitHub
 
+# Day 8
+
 ## GitHub workflow
 
-# Day 5
+# Day 9
+
+## Connecting GitHub with Heroku
+
+# Day 10
