@@ -101,11 +101,9 @@
             ><br />
             <small> First Edition: Jan 25, 2021</small>
           </sub>
+
           <br />
-          <small
-            >Support <strong>Asabeneh</strong> to create more educational
-            materials</small
-          >
+
           <div className="arrow">
             <a href="#footer-wrapper" rel="noopener noreferrer">
               <i class="far fa-arrow-alt-circle-down"></i>
@@ -113,7 +111,21 @@
           </div>
         </div>
       </header>
+
       <main>
+        <div>
+          <small
+            >Support the <strong>author</strong> to create more educational
+            materials</small
+          >
+          <br />
+          <a href="https://www.paypal.me/asabeneh"
+            ><img
+              src="./images/paypal_lg.png"
+              alt="Paypal Logo"
+              style="width: 10%"
+          /></a>
+        </div>
         <ul>
           <li>
             <a class="day" href="#day-1">Day 1</a>
@@ -559,9 +571,10 @@ backups-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</spa
         </p>
         <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ rm -rf backups-<span class="hljs-number">3</span>
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ ls
-backups    <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">second</span>-day.txt
+backups    <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span> <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">second</span>-day.txt
 backups-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>
 </code></pre>
+
         <p><em>Congratulations! Now you knew basic command lines</em></p>
         <h1 id="day-2">Day 2</h1>
         <h2 id="git-and-github">Git and GitHub</h2>
@@ -804,6 +817,21 @@ git config --global user<span class="hljs-selector-class">.email</span> <span cl
           <em>git pull</em> command by modifying some of the files from your
           remote repository and pull it using the <em>git pull</em> command.
         </p>
+
+        <h3 id="18-git-clone">18. Git clone</h3>
+        <p>
+          GitHub allows downloading a project using a URL. It is the same as
+          downloading by clicking a download button from a website. To clone, go
+          to desktop or any location and write the command
+          <em>git clone URL</em>.
+        </p>
+        <p>
+          For instance, to clone this repository, you need to run the following
+          command
+        </p>
+        <pre><code class="lang-sh">Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-variable">$ </span>cd Desktop
+Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop$ git clone https:/</span><span class="hljs-regexp">/github.com/</span>Asabeneh/<span class="hljs-number">10</span>-days-of-git-<span class="hljs-keyword">and</span>-github.git
+</code></pre>
         <p>
           <em
             >Congratulations! Now, you have a solid foundation of Git and
@@ -854,21 +882,48 @@ git checkout <span class="hljs-number">01e7</span>ba <span class="hljs-comment">
 git remote <span class="hljs-keyword">add</span> anyname repositoryUrl
 </code></pre>
 
-        <h3 id="pull-request">pull request</h3>
         <h1 id="day-3">Day 3</h1>
-        <h2 id="advanced-git-features">Advanced git features</h2>
+        <h2 id="git-repository-user-interface-features">
+          Git repository user interface features
+        </h2>
+        <p>
+          Familiarize yourself to GitHub account and repository available
+          features. Git has account setting and repository setting. Navigate
+          through the available features.
+        </p>
+        <p>Check the available repository features by clicking each buttons.</p>
+        <p><img src="./images/github-repository-ui_1.png" alt="" /></p>
+        <p>Check what is available on your GitHub account settings</p>
+        <p><img src="./images/github-repository-ui_2.png" alt="" /></p>
+        <h1 id="day-4">Day 4</h1>
         <h2 id="github-page">GitHub page</h2>
         <p>
           Every GitHub repository allows you to generate a URL of your project.
-          For instance, this a country project GitHub page.
+          For instance, this
+          <a href="https://asabeneh.github.io/10-days-of-git-and-github/"
+            >URL</a
+          >
+          has been generated from this project GitHub page. To generate GitHub
+          page URL, you should have an index.html at the top level inside the
+          project.
         </p>
-        <h2 id="github-wiki">GitHub wiki</h2>
         <p>
-          Every GitHub repository has a wiki page. A wiki page allows you to
-          write or document. <img src="./images/wiki.png" alt="" />
+          First go to the setting of this repository and then click on it. Go
+          all the way down until you get the GitHub pages section, then select
+          the master <img src="./images/github-page.png" alt="" />
         </p>
-
-        <h2 id="github-markdown">GitHub markdown</h2>
+        <p>
+          After you select the master, a save button will appear and click save.
+        </p>
+        <p><img src="./images/github-page-save.png" alt="" /></p>
+        <p>
+          After saving, a GitHub page URL will be generated automatically. That
+          is your URL for that specific project.
+        </p>
+        <p><img src="./images/github-page-save.png" alt="" /></p>
+        <h1 id="day-5">Day 5</h1>
+        <h2 id="documenting-on-github">Documenting on GitHub</h2>
+        <h2 id="github-markdown">GitHub Markdown</h2>
         <p>
           Markdown files can be used to write documentation or anything. The
           markdown file extension is .md
@@ -879,12 +934,25 @@ git remote <span class="hljs-keyword">add</span> anyname repositoryUrl
           syntax of markdown in a matter of minutes. Follow this
           <a href="https://guides.github.com/features/mastering-markdown/"
             >link</a
-          >to learn about markdown
+          >
+          to learn about markdown
         </p>
-        <h1 id="day-4">Day 4</h1>
+        <h2 id="github-wiki">GitHub wiki</h2>
+        <p>
+          Every GitHub repository has a wiki page. A wiki page allows you to
+          write or document. <img src="./images/wiki.png" alt="" />
+        </p>
+        <h1 id="day-6">Day 6</h1>
+        <h2 id="advanced-git-features">Advanced git features</h2>
+        <h1 id="day-7">Day 7</h1>
         <h2 id="collaborating-on-github">Collaborating on GitHub</h2>
+        <h1 id="day-8">Day 8</h1>
         <h2 id="github-workflow">GitHub workflow</h2>
-        <h1 id="day-5">Day 5</h1>
+        <h1 id="day-9">Day 9</h1>
+        <h2 id="connecting-github-with-heroku">
+          Connecting GitHub with Heroku
+        </h2>
+        <h1 id="day-10">Day 10</h1>
       </main>
 
       <footer>
