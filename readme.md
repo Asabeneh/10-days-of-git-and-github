@@ -16,12 +16,9 @@
 <div>
 
 <small>Support the **author** to create more educational materials</small>  
-<<<<<<< HEAD
 <a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
-=======
-<a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.jpg' alt='Paypal Logo' style="width:10%"/></a>
 
-> > > > > > > 8aeb028556438e5463cc5467e495d5f8c3260260
+<a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.jpg' alt='Paypal Logo' style="width:10%"/></a>
 
 </div>
 

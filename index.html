@@ -121,11 +121,8 @@
           <br />
           <a href="https://www.paypal.me/asabeneh"
             ><img
-<<<<<<< HEAD
               src="./images/paypal_lg.png"
-=======
               src="./images/paypal_lg.jpg"
->>>>>>> 8aeb028556438e5463cc5467e495d5f8c3260260
               alt="Paypal Logo"
               style="width: 10%"
           /></a>
@@ -836,6 +833,29 @@ git config --global user<span class="hljs-selector-class">.email</span> <span cl
         <pre><code class="lang-sh">Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-variable">$ </span>cd Desktop
 Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop$ git clone https:/</span><span class="hljs-regexp">/github.com/</span>Asabeneh/<span class="hljs-number">10</span>-days-of-git-<span class="hljs-keyword">and</span>-github.git
 </code></pre>
+
+        <h3 id="19-rename-branch">19. Rename Branch</h3>
+        <p>To rename a current branch</p>
+        <pre><code class="lang-sh">git branch -m &lt;<span class="hljs-keyword">new</span><span class="hljs-type">name</span>&gt;
+</code></pre>
+        <p>To rename any branch</p>
+        <pre><code class="lang-sh">git branch -m <span class="hljs-tag">&lt;<span class="hljs-name">oldname</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">newname</span>&gt;</span>
+</code></pre>
+        <h3 id="20-deleting-branch">20. Deleting Branch</h3>
+        <p>To delete a local branch</p>
+        <pre><code class="lang-sh"><span class="hljs-symbol">git</span> <span class="hljs-keyword">branch </span>-d <span class="hljs-keyword">branch-name
+</span><span class="hljs-symbol">git</span> <span class="hljs-keyword">branch </span>-D <span class="hljs-keyword">branch-name</span>
+</code></pre>
+        <p>To delete a remote branch</p>
+        <pre><code class="lang-sh">git push &lt;remote_name&gt; <span class="hljs-symbol">:&lt;branch_name&gt;</span>
+</code></pre>
+        <p>or</p>
+        <pre><code class="lang-sh">git push <span class="hljs-symbol">&lt;remote_name&gt;</span> --<span class="hljs-keyword">delete</span> <span class="hljs-symbol">&lt;branch_name&gt;</span>
+</code></pre>
+        <h3 id="21-renaming-commit">21. Renaming commit</h3>
+        It is possible to rename a commit using
+        <em>git commit --amend -m "New commit message"</em> command
+
         <p>
           <em
             >Congratulations! Now, you have a solid foundation of Git and
@@ -886,7 +906,6 @@ git checkout <span class="hljs-number">01e7</span>ba <span class="hljs-comment">
 git remote <span class="hljs-keyword">add</span> anyname repositoryUrl
 </code></pre>
 
-<<<<<<< HEAD
         <h1 id="day-3">Day 3</h1>
         <h2 id="git-repository-user-interface-features">
           Git repository user interface features
@@ -958,44 +977,6 @@ git remote <span class="hljs-keyword">add</span> anyname repositoryUrl
           Connecting GitHub with Heroku
         </h2>
         <h1 id="day-10">Day 10</h1>
-=======
-       <h1 id="day-3">Day 3</h1>
-<h2 id="git-repository-user-interface-features">Git repository user interface features</h2>
-<p>Familiarize yourself to GitHub account and repository available features.
-Git has account setting and repository setting. Navigate through the available features.</p>
-<p>Check the available repository features by clicking each buttons.</p>
-<p><img src="./images/github-repository-ui_1.png" alt=""></p>
-<p>Check what is available on your GitHub account settings</p>
-<p><img src="./images/github-repository-ui_2.png" alt=""></p>
-<h1 id="day-4">Day 4</h1>
-<h2 id="github-page">GitHub page</h2>
-<p>Every GitHub repository allows you to generate a URL of your project. For instance, this <a href="https://asabeneh.github.io/10-days-of-git-and-github/">URL</a> has been generated from this project GitHub page. To generate GitHub page URL, you should have an index.html at the top level inside the project.</p>
-<p>First go to the setting of this repository and then click on it. Go all the way down until you get the GitHub pages section, then select the master
-<img src="./images/github-page.png" alt=""></p>
-<p>After you select the master, a save button will appear and click save.</p>
-<p><img src="./images/github-page-save.png" alt=""></p>
-<p>After saving, a GitHub page URL will be generated automatically. That is your URL for that specific project.</p>
-<p><img src="./images/github-page-save.png" alt=""></p>
-<h1 id="day-5">Day 5</h1>
-<h2 id="documenting-on-github">Documenting on GitHub</h2>
-<h2 id="github-markdown">GitHub Markdown</h2>
-<p>Markdown files can be used to write documentation or anything. The markdown file extension is .md</p>
-<p>Markdown is an HTML-like markup language that allows to write text and render it on a browser. If you are familiar with HTML, you pick the syntax of markdown in a matter of minutes.
-Follow this <a href="https://guides.github.com/features/mastering-markdown/">link</a> to learn about markdown</p>
-<h2 id="github-wiki">GitHub wiki</h2>
-<p>Every GitHub repository has a wiki page. A wiki page allows you to write or document.
-<img src="./images/wiki.png" alt=""></p>
-<h1 id="day-6">Day 6</h1>
-<h2 id="advanced-git-features">Advanced git features</h2>
-<h1 id="day-7">Day 7</h1>
-<h2 id="collaborating-on-github">Collaborating on GitHub</h2>
-<h1 id="day-8">Day 8</h1>
-<h2 id="github-workflow">GitHub workflow</h2>
-<h1 id="day-9">Day 9</h1>
-<h2 id="connecting-github-with-heroku">Connecting GitHub with Heroku</h2>
-<h1 id="day-10">Day 10</h1>
-
->>>>>>> 8aeb028556438e5463cc5467e495d5f8c3260260
       </main>
 
       <footer>
