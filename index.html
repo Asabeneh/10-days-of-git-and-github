@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <title>10 Days of Git and GitHub</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        color: #1c1313;
+      }
+      header {
+        background-color: #24292e;
+        color: white;
+        padding: 25px;
+        text-align: center;
+      }
+      .day {
+        text-transform: uppercase;
+        color: black;
+        font-weight: 600;
+      }
+      li > a {
+        text-decoration: none;
+      }
+      li > a,
+      li > a:active,
+      li > a:visited {
+        color: #1c1313;
+      }
+      .header-title {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      img {
+        max-width: 100%;
+      }
+      footer {
+        background-color: #24292e;
+        color: white;
+        padding: 25px;
+        text-align: center;
+      }
+      main {
+        width: 70%;
+        margin: 50px auto;
+      }
+      .fa-arrow-alt-circle-up,
+      .fa-arrow-alt-circle-down {
+        margin-top: 25px;
+        color: rgb(133, 132, 129);
+        font-size: 30px;
+      }
+      @media (max-width: 758px) {
+        main {
+          width: 95%;
+          margin: 5px auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div align="center">
+          <h1 class="header-title">10 Days of Git and GitHub</h1>
+
+          <a
+            class="header-badge"
+            target="_blank"
+            href="https://www.linkedin.com/in/asabeneh/"
+          >
+            <img
+              src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social" /></a
+          ><a
+            class="header-badge"
+            target="_blank"
+            href="https://twitter.com/Asabeneh"
+          >
+            <img
+              alt="Twitter Follow"
+              src="https://img.shields.io/twitter/follow/asabeneh?style=social"
+            />
+          </a>
+          <br />
+
+          <sub
+            >Author:
+            <a href="https://www.linkedin.com/in/asabeneh/" target="_blank"
+              >Asabeneh Yetayeh</a
+            ><br />
+            <small> First Edition: Jan 25, 2021</small>
+          </sub>
+          <br />
+          <small
+            >Support <strong>Asabeneh</strong> to create more educational
+            materials</small
+          >
+          <div className="arrow">
+            <a href="#footer-wrapper" rel="noopener noreferrer">
+              <i class="far fa-arrow-alt-circle-down"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <ul>
+          <li>
+            <a class="day" href="#day-1">Day 1</a>
+            <ul>
+              <li>
+                <a href="#basic-command-lines">Basic Command Lines</a>
+                <ul>
+                  <li>
+                    <a href="#current-working-directory"
+                      >Current working directory</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#navigating-directory">Navigating directory</a>
+                  </li>
+                  <li><a href="#making-directory">Making Directory</a></li>
+                  <li>
+                    <a href="#list-files-and-directories"
+                      >List files and directories</a
+                    >
+                  </li>
+                  <li><a href="#detail-list">Detail list</a></li>
+                  <li><a href="#creating-file">Creating file</a></li>
+                  <li>
+                    <a href="#opening-and-writing-on-file"
+                      >Opening and writing on file</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#opening-file-to-read">Opening file to read</a>
+                  </li>
+                  <li><a href="#copy-file">Copy file</a></li>
+                  <li><a href="#rename-file">Rename file</a></li>
+                  <li>
+                    <a href="#moving-file-and-directory"
+                      >Moving file and directory</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#delete-file-and-directory"
+                      >Delete file and directory</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="day" href="#day-2">Day 2</a>
+            <ul>
+              <li>
+                <a href="#git-and-github">Git and GitHub</a>
+                <ul>
+                  <li><a href="#1-install-git">1. Install Git</a></li>
+                  <li>
+                    <a href="#2-checking-status-of-the-repository"
+                      >2. Checking status of the repository</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#3-configure-your-name-and-your-email"
+                      >3. Configure your name and your email</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#4-create-a-local-git-repository"
+                      >4. Create a local git repository</a
+                    >
+                  </li>
+                  <li><a href="#5-initialize-git">5. Initialize Git</a></li>
+                  <li>
+                    <a href="#6-add-file-to-the-staging-area"
+                      >6. Add file to the staging area</a
+                    >
+                  </li>
+                  <li><a href="#7-unstage-a-file">7. Unstage a file</a></li>
+                  <li>
+                    <a href="#8-commit-the-changes">8. Commit the changes</a>
+                  </li>
+                  <li><a href="#9-git-log">9. Git log</a></li>
+                  <li><a href="#10-git-check-out">10. Git check out</a></li>
+                  <li>
+                    <a href="#11-creating-a-branch">11. Creating a branch</a>
+                  </li>
+                  <li>
+                    <a href="#12-create-account-on-github"
+                      >12. Create account on GitHub</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#13-create-repository-on-github"
+                      >13. Create Repository on GitHub</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#14-connecting-git-with-remote-repository"
+                      >14. Connecting git with remote repository</a
+                    >
+                  </li>
+                  <li><a href="#15-push">15. Push</a></li>
+                  <li><a href="#16-merge">16. Merge</a></li>
+                  <li><a href="#17-pull">17. Pull</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#git-cheat-sheet">Git cheat sheet:</a>
+                <ul>
+                  <li><a href="#pull-request">pull request</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="day" href="#day-3">Day 3</a>
+            <ul>
+              <li>
+                <a href="#advanced-git-features">Advanced git features</a>
+              </li>
+              <li><a href="#github-page">GitHub page</a></li>
+              <li><a href="#github-wiki">GitHub wiki</a></li>
+              <li><a href="#github-markdown">GitHub markdown</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="day" href="#day-4">Day 4</a>
+            <ul>
+              <li>
+                <a href="#collaborating-on-github">Collaborating on GitHub</a>
+              </li>
+              <li><a href="#github-workflow">GitHub workflow</a></li>
+            </ul>
+          </li>
+          <li><a class="day" href="#day-5">Day 5</a></li>
+        </ul>
+        <h1 id="day-1">Day 1</h1>
+        <h2 id="basic-command-lines">Basic Command Lines</h2>
+        <p>
+          Developers need to know basic Unix commands. Some tasks necessary need
+          to be done using git bash, mac terminal, or window command prompt. In
+          this tutorial, we will use git bash to learn the basics of the Unix
+          command which you may need as a developer. This is not an exhaustive
+          list but it is enough for daily uses. To make use of git bash first
+          you should install
+          <a href="https://git-scm.com/">git</a>. You can install by just
+          clicking the next button up to the end of the installation.
+        </p>
+        <h3 id="current-working-directory">Current working directory</h3>
+        <p>Checking the working directory using the command <em>pwd</em>.</p>
+        <pre><code class="lang-sh"><span class="hljs-selector-tag">Asabeneh</span>@<span class="hljs-keyword">DESKTOP</span>-<span class="hljs-keyword">KGC1AKC</span> MINGW64 ~$ pwd
+/c/Users/Asabeneh
+</code></pre>
+        <h3 id="navigating-directory">Navigating directory</h3>
+        <p>Now, let&#39;s go to the Desktop using cd(change directory).</p>
+        <pre><code class="lang-sh">Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-variable">$ </span>cd Desktop
+Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop</span>
+</code></pre>
+        <p>To check where you are at, use the <em>pwd</em> command age</p>
+        <pre><code class="lang-sh">Asabeneh<span class="hljs-meta">@DESKTOP</span>-KGC1AKC MINGW64 ~/Desktop$ pwd
+<span class="hljs-regexp">/c/</span>Users<span class="hljs-regexp">/Asabeneh/</span>Desktop
+</code></pre>
+        <p>
+          We use <em>cd</em> to get into a directory(folder) and we use
+          <em>cd..</em> to get out from a directory, in other words, we use
+          <em>cd</em> to go forward into a directory and <em>cd ..</em> to go
+          backward from a directory.
+        </p>
+        <h3 id="making-directory">Making Directory</h3>
+        <p>
+          Now, let&#39;s create a directory inside the Desktop. Call the name of
+          the directory, 10-days-of-code. You give it any name but I am in favor
+          of this name. Use the <em>mkdir</em> command to make a
+          directory(folder)
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop$ mkdir <span class="hljs-number">10</span>-days-<span class="hljs-keyword">of</span>-<span class="hljs-keyword">code</span>
+</code></pre>
+        <p>
+          Now let&#39;s go to the 10-days-of-code folder using
+          <em>cd</em> command.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop$ cd <span class="hljs-number">10</span>-days-<span class="hljs-keyword">of</span>-<span class="hljs-keyword">code</span>
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-days-<span class="hljs-keyword">of</span>-<span class="hljs-keyword">code</span>
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-days-<span class="hljs-keyword">of</span>-<span class="hljs-keyword">code</span>$ pwd
+/c/Users/Asabeneh/Desktop/<span class="hljs-number">10</span>-days-<span class="hljs-keyword">of</span>-<span class="hljs-keyword">code</span>
+</code></pre>
+        <h3 id="list-files-and-directories">List files and directories</h3>
+        <p>
+          We can check the files and directories we have in a directory(folder)
+          using the <em>ls</em> command.
+        </p>
+        <pre><code class="lang-sh">Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop/</span><span class="hljs-number">10</span>-days-of-code<span class="hljs-variable">$ </span>ls
+</code></pre>
+        <p>
+          No files or directories were found in the 10-days-of-code folder
+          because we didn&#39;t create them yet. Let&#39;s create some
+          directories
+        </p>
+        <pre><code class="lang-sh">Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop/</span><span class="hljs-number">10</span>-days-of-code<span class="hljs-variable">$ </span>mkdir day-<span class="hljs-number">1</span>
+</code></pre>
+        <p>
+          Now let&#39;s check if there are some files or directories in the
+          10-days-of-code folder.
+        </p>
+        <pre><code class="lang-sh">Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop/</span><span class="hljs-number">10</span>-days-of-code<span class="hljs-variable">$ </span>ls
+day-<span class="hljs-number">1</span>
+</code></pre>
+        <p>Now, you see a day-1 folder that you created.</p>
+        <p>
+          Now let&#39;s create multiple folders at one and use <em>ls</em> to
+          see all the directories we have in the 10-days-of-code folder.
+        </p>
+        <p>Making multiple folders at once</p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ mkdir <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span> <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span> <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span> <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span> <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span> <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span> <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span> <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span> <span class="hljs-built_in">day</span>-<span class="hljs-number">10</span>
+</code></pre>
+        <p>
+          Using <em>ls</em> we can see all the directories we have in the
+          10-days-of-code
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">10</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>
+</code></pre>
+        <h3 id="detail-list">Detail list</h3>
+        <p>
+          Let&#39;s see a detailed list of the directories using multiple
+          commands,
+          <em>ls -la</em>.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
+$ ls -la
+total 20
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 .
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:05 ..
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:12 day-1
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 day-10
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 day-2
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 day-3
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 day-4
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 day-5
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 day-6
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 day-7
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 day-8
+drwxr-xr-x<span class="hljs-number"> 1 </span>Asabeneh<span class="hljs-number"> 197121 </span>0 Jan<span class="hljs-number"> 19 </span>02:16 day-9
+</code></pre>
+        <p>
+          Using the above command, we can see the detailed view of a directory
+          or a file
+        </p>
+        <h3 id="creating-file">Creating file</h3>
+        <p>
+          Now, let&#39;s see how to create a file. We can use the
+          <em>touch</em> command to write a file.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ touch <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">10</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>
+</code></pre>
+        <p>
+          As you can see, there is day-1.txt in the list. That means we have
+          created the day-1.txt file inside the 10-days-of-code folder. You can
+          also you
+          <em>ls -la</em> command to use the detailed view of the folders and
+          file.
+        </p>
+        <h3 id="opening-and-writing-on-file">Opening and writing on file</h3>
+        <p>
+          Now, let&#39;s open the day-1.txt file and add some text to it. We use
+          the
+          <em>nano</em> command to open and write.
+        </p>
+        <pre><code class="lang-sh">Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop/</span><span class="hljs-number">10</span>-days-of-code<span class="hljs-variable">$ </span>nano day-<span class="hljs-number">1</span>.txt
+</code></pre>
+        <p><img src="/images/nano.png" alt="" /></p>
+        <p>
+          As you can see from the above figure, the cursor is active and you can
+          write on the pad. You can only use arrow keys to move the cursor left,
+          right, up, and down. Let&#39;s write some text on the opened pad.
+          There are instructors at the bottom that tells how to exit. For
+          instance ctrl + x is to exit. When you exit either you save or cancel
+          which comes when you click ctrl + x.
+        </p>
+        <p><img src="/images/writting_on_nano.png" alt="" /></p>
+        <p>
+          Now you can save the modified file by writing Y or you can cancel it
+          by clicking ctrl + c.
+        </p>
+        <p>After you write Y then click enter.</p>
+        <h3 id="opening-file-to-read">Opening file to read</h3>
+        <p>We can use the <em>cat</em> command just only to read the file.</p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-days-<span class="hljs-keyword">of</span>-code$ cat <span class="hljs-built_in">day</span><span class="hljs-number">-1.</span>txt
+This <span class="hljs-keyword">is</span> <span class="hljs-keyword">my</span> <span class="hljs-keyword">first</span> <span class="hljs-built_in">text</span>. I have never written <span class="hljs-keyword">on</span> nano <span class="hljs-built_in">text</span> editor <span class="hljs-keyword">before</span>
+</code></pre>
+        <h3 id="copy-file">Copy file</h3>
+        <p>
+          Let&#39;s have day-1-backup.txt from day-1.txt by copying using the
+          <em>cp</em> command.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ cp <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt
+
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span> $ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">10</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>
+</code></pre>
+        <h3 id="rename-file">Rename file</h3>
+        <p>
+          The <em>mv</em> command is used both to change the name of a file and
+          to move a file into a different directory.
+        </p>
+        <p>
+          Let&#39;s have more files in the 10-days-of-code folder. We can use
+          the
+          <em>touch</em> command to create files.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ touch <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>.txt <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">10</span>          <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>
+</code></pre>
+        <p>
+          Now, let&#39;s rename the day-2.txt to second-day.txt using the
+          <em>mv</em> command.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-days-<span class="hljs-keyword">of</span>-code$ mv <span class="hljs-built_in">day</span><span class="hljs-number">-2.</span>txt <span class="hljs-keyword">second</span>-<span class="hljs-built_in">day</span>.txt
+
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-days-<span class="hljs-keyword">of</span>-code$ ls
+<span class="hljs-built_in">day</span><span class="hljs-number">-1</span>      <span class="hljs-built_in">day</span><span class="hljs-number">-10</span>          <span class="hljs-built_in">day</span><span class="hljs-number">-2</span>  <span class="hljs-built_in">day</span><span class="hljs-number">-3.</span>txt  <span class="hljs-built_in">day</span><span class="hljs-number">-4.</span>txt  <span class="hljs-built_in">day</span><span class="hljs-number">-5.</span>txt  <span class="hljs-built_in">day</span><span class="hljs-number">-7</span>  <span class="hljs-built_in">day</span><span class="hljs-number">-9</span>
+<span class="hljs-built_in">day</span><span class="hljs-number">-1.</span>txt  <span class="hljs-built_in">day</span><span class="hljs-number">-1</span>-backup.txt  <span class="hljs-built_in">day</span><span class="hljs-number">-3</span>  <span class="hljs-built_in">day</span><span class="hljs-number">-4</span>      <span class="hljs-built_in">day</span><span class="hljs-number">-5</span>      <span class="hljs-built_in">day</span><span class="hljs-number">-6</span>      <span class="hljs-built_in">day</span><span class="hljs-number">-8</span>  <span class="hljs-keyword">second</span>-<span class="hljs-built_in">day</span>.txt
+</code></pre>
+        <p>Let&#39;s rename the day-10 directory to day-ten.</p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ mv <span class="hljs-built_in">day</span>-<span class="hljs-number">10</span> <span class="hljs-built_in">day</span>-ten
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">day</span>-ten
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>           <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>  <span class="hljs-built_in">second</span>-day.txt
+</code></pre>
+        <h3 id="moving-file-and-directory">Moving file and directory</h3>
+        <p>
+          The <em>mv</em> and <em>cp</em> commands can be used to put files into
+          a directory. The <em>cp</em> moves the copy of the file or the folder
+          to another folder, however, mv just move it without copying. Let&#39;s
+          move the day-1.txt day-1 folder.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ mv <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>           <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>    <span class="hljs-built_in">second</span>-day.txt
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">day</span>-ten
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ cd <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>/<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt
+</code></pre>
+        <p>
+          Let&#39;s try to move a file using the <em>cp</em> command. Let&#39;s
+          move the day-1-backup.txt to day-1 folder
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-git/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ cp <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>
+
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-git/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ cd <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-git/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>/<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>
+$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt
+
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-git/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>/<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>
+$ cd ..
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-git/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>             <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>    <span class="hljs-built_in">second</span>-day.txt
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">day</span>-ten
+</code></pre>
+        <p>
+          The copied version of day-1-backup.txt moved to a day-1 folder. Now
+          let&#39;s create multiple backup files first and move them to a backup
+          folder
+        </p>
+        <pre><code class="lang-sh">Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop/</span><span class="hljs-number">10</span>-days-of-code<span class="hljs-variable">$ </span>mkdir backups
+Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop/</span><span class="hljs-number">10</span>-days-of-code<span class="hljs-variable">$ </span>cd backups
+Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop/</span><span class="hljs-number">10</span>-days-of-code/backups<span class="hljs-variable">$ </span>touch day-<span class="hljs-number">2</span>-backup.txt day-<span class="hljs-number">3</span>-backup.txt
+Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class="hljs-regexp">/Desktop/</span><span class="hljs-number">10</span>-days-of-code/backups<span class="hljs-variable">$ </span>ls
+day-<span class="hljs-number">2</span>-backup.txt  day-<span class="hljs-number">3</span>-backup.txt
+</code></pre>
+        <p>Moving multiple files</p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ mv -<span class="hljs-built_in">t</span> backups <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>-backup.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>-backup.txt
+</code></pre>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ cd backups/
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>/backups
+$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>-backup.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>-backup.txt
+</code></pre>
+        <h3 id="delete-file-and-directory">Delete file and directory</h3>
+        <p>
+          Let&#39;s remove the file using the <em>rm</em> command. Let&#39;s
+          remove the day-1-backup.txt file from the day-1 folder.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ cd <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>
+
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>/<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>
+$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt
+
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>/<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>
+$ rm  <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>-backup.txt
+
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>/<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>$ ls
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>.txt
+</code></pre>
+        <p>
+          Let&#39;s delete the day-ten folder using <em>rmdir</em> command. The
+          <em>rmdir</em> delete a folder.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ rmdir <span class="hljs-built_in">day</span>-ten
+
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ ls
+backups  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>
+<span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>    <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">second</span>-day.txt
+</code></pre>
+        <p>
+          Now, let&#39;s copy the backups folder to backups-2 and backup-3 using
+          <em>cp</em> command. Then we will delete backups-3. The
+          <em>cp</em> with <em>-r</em> has been used to copy it recursively.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ cp -r backups backups-<span class="hljs-number">2</span>
+
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ ls
+backups    <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">second</span>-day.txt
+backups-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>
+</code></pre>
+        <p>Now let&#39;s do the above step to create backups-3</p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ cp -r backups backups-<span class="hljs-number">3</span>
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>
+$ ls
+backups    backups-<span class="hljs-number">3</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>
+backups-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">second</span>-day.txt
+</code></pre>
+        <p>
+          Now the backups-3 has files and neither the <em>rm</em> nor the
+          <em>rmdir</em> deletes it. Therefore, we can use multiple commands to
+          delete it. Let&#39;s try it with the following command.
+        </p>
+        <pre><code class="lang-sh">Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ rm -rf backups-<span class="hljs-number">3</span>
+Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/<span class="hljs-number">10</span>-<span class="hljs-built_in">days</span>-of-<span class="hljs-built_in">code</span>$ ls
+backups    <span class="hljs-built_in">day</span>-<span class="hljs-number">1</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>      <span class="hljs-built_in">day</span>-<span class="hljs-number">6</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">8</span>  <span class="hljs-built_in">second</span>-day.txt
+backups-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">2</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">3</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">4</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">5</span>.txt  <span class="hljs-built_in">day</span>-<span class="hljs-number">7</span>  <span class="hljs-built_in">day</span>-<span class="hljs-number">9</span>
+</code></pre>
+        <p><em>Congratulations! Now you knew basic command lines</em></p>
+        <h1 id="day-2">Day 2</h1>
+        <h2 id="git-and-github">Git and GitHub</h2>
+        <p>
+          Git is a version control software. In one way or the other you may
+          need to use a git and a GitHub together.
+        </p>
+        <p>
+          You need to use git and GitHub either to store your projects on the
+          cloud or to collaborate with your team. This means it allows
+          developers or writers to work on the same project even if they are
+          located in different locations.
+        </p>
+        <p>
+          Version control is a means of recording changes to a file or set of
+          files over time so that you can recall specific versions later.
+        </p>
+        <p>
+          If you prefer watching the tutorial click this
+          <a
+            href="https://www.youtube.com/watch?v=9cCApTLb_Io&amp;list=PLbvhRHYrmshSCAHZbibqh_px_LxnU54dk"
+            >link</a
+          >
+        </p>
+        <h3 id="1-install-git">1. Install Git</h3>
+        <p>First, you need to install the version control software, Git.</p>
+        <ul>
+          <li>Git: Install <a href="https://git-scm.com/downloads">git</a></li>
+        </ul>
+        <h3 id="2-checking-status-of-the-repository">
+          2. Checking status of the repository
+        </h3>
+        <p>
+          The <em>git status</em> command allows you to know the status of the
+          project: If it is
+        </p>
+        <ul>
+          <li>initiated</li>
+          <li>modified</li>
+          <li>staged</li>
+        </ul>
+        <p>
+          We can write the command <em>git status</em> at any time. It is a
+          means to to check what is happening on your project.
+        </p>
+        <h3 id="3-configure-your-name-and-your-email">
+          3. Configure your name and your email
+        </h3>
+        <p>
+          Open the Git bash if your device is Windows, or open the Mac terminal
+          if your device is MacOS and then write the following commands
+        </p>
+        <pre><code class="lang-shell">git config --global user<span class="hljs-selector-class">.name</span> <span class="hljs-string">'yourname'</span>
+git config --global user<span class="hljs-selector-class">.email</span> <span class="hljs-string">'youremail'</span>
+</code></pre>
+        <h3 id="4-create-a-local-git-repository">
+          4. Create a local git repository
+        </h3>
+        <p>
+          In this step, you will create a folder (directory) for your project. A
+          project is just a simple folder that stores all the files related to a
+          certain project. A local repository is a project or a folder that is
+          on your computer.
+        </p>
+        <p>
+          If your Git bash is not opened, go to start and type git bash. Git
+          terminal will popup on Windows devices. If it is MasOS just open the
+          Mac terminal. On the terminal write:
+        </p>
+        <pre><code class="lang-shell"><span class="hljs-built_in">mkdir</span> project_name
+<span class="hljs-built_in">cd</span> project_name
+</code></pre>
+        <p>
+          By the way, you can also create the folders the usual way using on the
+          GUI(Graphical User Interface) of Windows or Mac.
+        </p>
+        <h3 id="5-initialize-git">5. Initialize Git</h3>
+        <p>
+          After creating a new local repository or in an existing local
+          repository, initialize the repository by the following command:
+        </p>
+        <pre><code class="lang-shell"><span class="hljs-attribute">   git init</span>
+</code></pre>
+        <p>
+          Once, the repository is initialized git tracks the changes in the
+          files and folders of the project.
+        </p>
+        <h3 id="6-add-file-to-the-staging-area">
+          6. Add file to the staging area
+        </h3>
+        <p>
+          The file can be added to the staging area in multiple ways. To add a
+          single file, we use the <em>git add</em> command followed by a file
+          name
+        </p>
+        <pre><code class="lang-shell">   git <span class="hljs-keyword">add</span><span class="bash"> filename</span>
+</code></pre>
+        <p>
+          To add multiple files using their file names using the command
+          <em>git add</em> followed by file names
+        </p>
+        <pre><code class="lang-shell">   git <span class="hljs-keyword">add</span><span class="bash"> filename1 filename2</span>
+</code></pre>
+        <p>
+          Sometimes, we may make a lot of changes, and adding files one by one
+          is tiring and not product. Therefore, we can use a short and product
+          way. The
+          <em>git add</em> command followed by a dot allows adding files and
+          folders at once to the stage area. Remember, there is a space between
+          the add and the dot.
+        </p>
+        <p>To add all files and folders at once</p>
+        <pre><code class="lang-shell">   git <span class="hljs-keyword">add</span><span class="bash"> .</span>
+</code></pre>
+        <h3 id="7-unstage-a-file">7. Unstage a file</h3>
+        <pre><code class="lang-shell">    git <span class="hljs-keyword">reset</span> <span class="hljs-keyword">HEAD</span> filename
+</code></pre>
+        <h3 id="8-commit-the-changes">8. Commit the changes</h3>
+        <p>
+          Commit means taking a snapshot or a copy of your file at that point in
+          time. You may associate it with saving a file with a new name (save
+          as).
+        </p>
+        <pre><code class="lang-shell">   <span class="hljs-attribute">git</span> commit -m <span class="hljs-string">'your message'</span>
+</code></pre>
+        <p>
+          Your commit message has to be associated with the changes or
+          modifications you make.
+        </p>
+        <h3 id="9-git-log">9. Git log</h3>
+        <p>
+          The <em>git log</em> command allows knowing the commit history of the
+          project
+        </p>
+        <h3 id="10-git-check-out">10. Git check out</h3>
+        <p>
+          We can identify the commit id of each commit using the
+          <em>git log</em> command. Then we can make use of this id to retire
+          any previous commit.
+        </p>
+        <pre><code class="lang-sh">git checkout <span class="hljs-keyword">commit</span>-<span class="hljs-keyword">id</span>
+</code></pre>
+        <h3 id="11-creating-a-branch">11. Creating a branch</h3>
+        <p>
+          You can create a copy of the master using a branch. You built an
+          awesome application. You like to keep this awesome application as it
+          is but you like to add some features. This is the time, you need
+          branching the master. The branch is the copy of the master at
+          branching instant. After branching, the branch and the master
+          don&#39;t see each other. You can create as many branches as you want.
+        </p>
+        <p>To create a branch:</p>
+        <ul>
+          <li>Only to create branch</li>
+        </ul>
+        <pre><code class="lang-shell">    git checkout  branch-<span class="hljs-built_in">name</span>
+</code></pre>
+        <p>To create branch:</p>
+        <ul>
+          <li>To create and checkout to the branch at the same time:</li>
+        </ul>
+        <pre><code class="lang-shell">    git checkout -<span class="hljs-selector-tag">b</span> branch-name
+</code></pre>
+        <p>To switch between branches:</p>
+        <pre><code class="lang-shell">    git checkout main
+    git checkout branch-<span class="hljs-built_in">name</span>
+</code></pre>
+        <p>To list down all the branches:</p>
+        <pre><code class="lang-shell"><span class="hljs-attribute">    git branch</span>
+</code></pre>
+        <h3 id="12-create-account-on-github">12. Create account on GitHub</h3>
+        <p>
+          Now, create an account on GitHub and sign in using your emails and
+          password
+        </p>
+        <ul>
+          <li>GitHub Sign up on <a href="https://github.com/">GitHub</a></li>
+        </ul>
+        <h3 id="13-create-repository-on-github">
+          13. Create Repository on GitHub
+        </h3>
+        <p>
+          Go to <a href="https://github.com/">GitHub</a> and create a repository
+          by click the plus icon on the top right corner.
+        </p>
+        <h3 id="14-connecting-git-with-remote-repository">
+          14. Connecting git with remote repository
+        </h3>
+        <p>
+          In this step, you will connect your local git repository with your
+          remote GitHub repository
+        </p>
+        <pre><code class="lang-shell">    git remote <span class="hljs-keyword">add</span><span class="bash"> origin remote_repository_ul</span>
+</code></pre>
+        <p>
+          The word origin could be any word. It is a means to assign the
+          repository URL. If this is step is passed without error, you are ready
+          to push it to your remote GitHub repository. Push means actually
+          uploading what you have on your local to remote repository.
+        </p>
+        <h3 id="15-push">15. Push</h3>
+        <p>
+          Before you push(upload), please commits any changes and if it is ready
+          push your files to your remote GitHub repository using the following
+          command.
+        </p>
+        <pre><code class="lang-shell">    git <span class="hljs-built_in">push</span> -u <span class="hljs-built_in">origin</span> master
+</code></pre>
+        <h3 id="16-merge">16. Merge</h3>
+        <p>
+          When you work on an individual project or a team project you may have
+          different branches. Mostly you will have a master(main), develop and
+          other branches. Then you will merge other branches to your develop and
+          your develop to master. It is possible to merge any branches. For
+          instance, lets merge feature branch to develop
+        </p>
+        <pre><code class="lang-shell">    git checkout develop
+    git <span class="hljs-keyword">merge</span> feature
+</code></pre>
+        <p>
+          Using the above code, now the develop and feature branches do have the
+          same content
+        </p>
+        <h3 id="17-pull">17. Pull</h3>
+        <p>
+          If your team merges new features to the develop, then you will be
+          behind, now you need to make your project to the current stage by
+          pulling from develop
+        </p>
+        <pre><code class="lang-shell"><span class="hljs-attribute">    git checkout yourbranch
+    git pull origin develop</span>
+</code></pre>
+        <pre><code class="lang-sh">    git checkout develop
+    git merge yourbranch
+    git <span class="hljs-built_in">push</span> -u <span class="hljs-built_in">origin</span> develop
+</code></pre>
+        <p>
+          If you are a sole developer that works by yourself then you can test
+          the
+          <em>git pull</em> command by modifying some of the files from your
+          remote repository and pull it using the <em>git pull</em> command.
+        </p>
+        <p>
+          <em
+            >Congratulations! Now, you have a solid foundation of Git and
+            GitHub</em
+          >
+        </p>
+        <h2 id="git-cheat-sheet-">Git cheat sheet:</h2>
+        <p>Here you have the basic git commands which might be useful:</p>
+        <pre><code class="lang-shell">git <span class="hljs-comment">--version     // to check the version</span>
+git <span class="hljs-keyword">help</span>          // <span class="hljs-keyword">To</span> <span class="hljs-keyword">get</span> <span class="hljs-keyword">help</span> <span class="hljs-keyword">from</span> git
+git <span class="hljs-keyword">help</span> <span class="hljs-keyword">commit</span>   // <span class="hljs-keyword">To</span> <span class="hljs-keyword">get</span> <span class="hljs-keyword">commit</span> <span class="hljs-keyword">help</span>
+
+git init          // Initilaizing git repository <span class="hljs-keyword">on</span> <span class="hljs-keyword">local</span> machine
+
+git config <span class="hljs-comment">--list // to check what is configured</span>
+git config        // <span class="hljs-keyword">to</span> <span class="hljs-keyword">get</span> information about configuration
+git config <span class="hljs-comment">--global user.name "username" //Configuring git user name</span>
+git config <span class="hljs-comment">--global user.email "email" //Configuring git user email</span>
+
+git <span class="hljs-keyword">add</span> filename
+git <span class="hljs-keyword">add</span> first.txt # adding <span class="hljs-keyword">only</span> one <span class="hljs-keyword">file</span>
+git <span class="hljs-keyword">add</span> second.txt third.txt // <span class="hljs-keyword">to</span> <span class="hljs-keyword">add</span> multiple <span class="hljs-keyword">file</span>
+git <span class="hljs-keyword">add</span> . //<span class="hljs-keyword">To</span> <span class="hljs-keyword">add</span> all the files <span class="hljs-keyword">and</span> folders <span class="hljs-keyword">to</span> the staging area
+
+git <span class="hljs-keyword">commit</span> -m <span class="hljs-string">'commit message'</span> // <span class="hljs-keyword">after</span> staging <span class="hljs-keyword">using</span> <span class="hljs-keyword">add</span>
+git <span class="hljs-keyword">commit</span> -a -m <span class="hljs-string">'commit message'</span> // staging <span class="hljs-keyword">using</span> a <span class="hljs-keyword">and</span> commiting
+git <span class="hljs-keyword">commit</span> -am <span class="hljs-string">'commit message'</span> // staging <span class="hljs-keyword">and</span> committing
+
+git <span class="hljs-keyword">commit</span> -am <span class="hljs-string">"Message"</span> #Grab every thing <span class="hljs-keyword">in</span> the working copy <span class="hljs-keyword">and</span> -a allows <span class="hljs-keyword">to</span> <span class="hljs-keyword">skip</span> the staging copy
+git <span class="hljs-keyword">log</span>  // <span class="hljs-keyword">To</span> see the history <span class="hljs-keyword">on</span> the repository
+git <span class="hljs-keyword">log</span> <span class="hljs-comment">--author ="name" #To check change by specific user</span>
+git <span class="hljs-keyword">status</span>  //<span class="hljs-keyword">To</span> <span class="hljs-keyword">check</span> changes <span class="hljs-keyword">or</span> <span class="hljs-keyword">status</span> <span class="hljs-keyword">of</span> the <span class="hljs-keyword">file</span>
+
+
+git diff #Compare workin copy <span class="hljs-keyword">in</span> the repository
+git diff <span class="hljs-comment">--staged # Compare files in the staging area</span>
+
+git rm filename
+git mv filename1 filename2
+git mv filename foldernam/filename2
+git <span class="hljs-keyword">commit</span> -am <span class="hljs-string">"This skip the stage process"</span>
+git checkout <span class="hljs-comment">-- filename #To get working copy back</span>
+git <span class="hljs-keyword">reset</span>  <span class="hljs-keyword">HEAD</span> filename // removes <span class="hljs-keyword">from</span> the staging area/unstage
+git checkout <span class="hljs-number">01e7</span>ba <span class="hljs-comment">-- filename # Tracking the differentversion of the project</span>
+git remote <span class="hljs-keyword">add</span> anyname repositoryUrl
+git push -u remote <span class="hljs-keyword">master</span> // <span class="hljs-keyword">to</span> push the <span class="hljs-keyword">file</span> <span class="hljs-keyword">into</span> github
+git checkout <span class="hljs-number">01e7</span>ba <span class="hljs-comment">-- filename</span>
+git remote <span class="hljs-keyword">add</span> anyname repositoryUrl
+</code></pre>
+
+        <h3 id="pull-request">pull request</h3>
+        <h1 id="day-3">Day 3</h1>
+        <h2 id="advanced-git-features">Advanced git features</h2>
+        <h2 id="github-page">GitHub page</h2>
+        <p>
+          Every GitHub repository allows you to generate a URL of your project.
+          For instance, this a country project GitHub page.
+        </p>
+        <h2 id="github-wiki">GitHub wiki</h2>
+        <p>
+          Every GitHub repository has a wiki page. A wiki page allows you to
+          write or document. <img src="./images/wiki.png" alt="" />
+        </p>
+
+        <h2 id="github-markdown">GitHub markdown</h2>
+        <p>
+          Markdown files can be used to write documentation or anything. The
+          markdown file extension is .md
+        </p>
+        <p>
+          Markdown is an HTML-like markup language that allows to write text and
+          render it on a browser. If you are familiar with HTML, you pick the
+          syntax of markdown in a matter of minutes. Follow this
+          <a href="https://guides.github.com/features/mastering-markdown/"
+            >link</a
+          >to learn about markdown
+        </p>
+        <h1 id="day-4">Day 4</h1>
+        <h2 id="collaborating-on-github">Collaborating on GitHub</h2>
+        <h2 id="github-workflow">GitHub workflow</h2>
+        <h1 id="day-5">Day 5</h1>
+      </main>
+
+      <footer>
+        <div class="footer-wrapper" id="footer-wrapper">
+          <div>
+            <p>Copyright &copy; 2021 | Asabeneh Yetayeh</p>
+          </div>
+          <div className="arrow">
+            <a href="#wrapper" rel="noopener noreferrer">
+              <i class="far fa-arrow-alt-circle-up"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

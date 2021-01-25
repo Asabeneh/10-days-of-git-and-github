@@ -1,3 +1,24 @@
+<div align="center">
+  <h1>10 Days of Git and GitHub</h1>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  </a>
+
+<sub>Author:<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<small> First Edition: Nov 25, 2021</small>
+</sub>
+
+</div>
+
+<div>
+
+<small>Support **Asabeneh** to create more educational materials</small>
+
+</div>
+
 - [Day 1](#day-1)
   - [Basic Command Lines](#basic-command-lines)
     - [Current working directory](#current-working-directory)
@@ -47,7 +68,7 @@
 
 ## Basic Command Lines
 
-Developers need to know basic Unix commands. Some tasks necessary need to be done using git bash, mac terminal or window command prompt. In this tutorial, we will use git bash to learn the basics of Unix command which you may need as a developer. This is not an exhaustive list but which is enough for daily uses. To make use of git bash first you should install [git](https://git-scm.com/). You can install by just clicking next button up to the end of the installation.
+Developers need to know basic Unix commands. Some tasks necessary need to be done using git bash, mac terminal, or window command prompt. In this tutorial, we will use git bash to learn the basics of the Unix command which you may need as a developer. This is not an exhaustive list but it is enough for daily uses. To make use of git bash first you should install [git](https://git-scm.com/). You can install by just clicking the next button up to the end of the installation.
 
 ### Current working directory
 
@@ -74,7 +95,7 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop$ pwd
 /c/Users/Asabeneh/Desktop
 ```
 
-We use _cd_ to get into a directory(folder) and we use _cd.._ to get out from a directory, in other words we use _cd_ go forward into a directory and _cd .._ to go backward from a directory.
+We use _cd_ to get into a directory(folder) and we use _cd.._ to get out from a directory, in other words, we use _cd_ to go forward into a directory and _cd .._ to go backward from a directory.
 
 ### Making Directory
 
@@ -102,20 +123,20 @@ We can check the files and directories we have in a directory(folder) using the 
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
 ```
 
-No files or directories were found in the 10-days-of-code folder because we didn't create yet. Let's create some directories
+No files or directories were found in the 10-days-of-code folder because we didn't create them yet. Let's create some directories
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ mkdir day-1
 ```
 
-Now let's check if there is some files or directories in the 10-days-of-code folder.
+Now let's check if there are some files or directories in the 10-days-of-code folder.
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
 day-1
 ```
 
-Now, you see day-1 folder that you created.
+Now, you see a day-1 folder that you created.
 
 Now let's create multiple folders at one and use _ls_ to see all the directories we have in the 10-days-of-code folder.
 
@@ -135,7 +156,7 @@ day-1  day-10  day-2  day-3  day-4  day-5  day-6  day-7  day-8  day-9
 
 ### Detail list
 
-Let's see a detail list of the directories using multiple commands, _ls -la_.
+Let's see a detailed list of the directories using multiple commands, _ls -la_.
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
@@ -155,7 +176,7 @@ drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-8
 drwxr-xr-x 1 Asabeneh 197121 0 Jan 19 02:16 day-9
 ```
 
-Using the above command, we can see the detail view of a directory or a file
+Using the above command, we can see the detailed view of a directory or a file
 
 ### Creating file
 
@@ -167,11 +188,11 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ ls
 day-1  day-1.txt  day-10  day-2  day-3  day-4  day-5  day-6  day-7  day-8  day-9
 ```
 
-As you can see, there is day-1.txt in the list. That means we have created day-1.txt file inside the 10-days-of-code folder. You can also you _ls -la_ command to use the detail view of the folders and file.
+As you can see, there is day-1.txt in the list. That means we have created the day-1.txt file inside the 10-days-of-code folder. You can also you _ls -la_ command to use the detailed view of the folders and file.
 
 ### Opening and writing on file
 
-Now, let's open the day-1.txt file and add some text on it. We use the _nano_ command to open and write.
+Now, let's open the day-1.txt file and add some text to it. We use the _nano_ command to open and write.
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ nano day-1.txt
@@ -179,7 +200,7 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ nano day-1.txt
 
 ![](/images/nano.png)
 
-As you can see from the above figure, the cursor is active and you can write on the pad. You can only use arrow keys to move the cursor left, right, up and down. Let's write some text on the opened pad. There are instructors at the bottom that tells how to exit.For instance ctrl + x is to exit. When you exit either you save or cancel which comes when you click ctrl + x.
+As you can see from the above figure, the cursor is active and you can write on the pad. You can only use arrow keys to move the cursor left, right, up, and down. Let's write some text on the opened pad. There are instructors at the bottom that tells how to exit. For instance ctrl + x is to exit. When you exit either you save or cancel which comes when you click ctrl + x.
 
 ![](/images/writting_on_nano.png)
 
@@ -198,7 +219,7 @@ This is my first text. I have never written on nano text editor before
 
 ### Copy file
 
-Let's have day-1-backup.txt from day-1.txt by copying using _cp_ command.
+Let's have day-1-backup.txt from day-1.txt by copying using the _cp_ command.
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
@@ -212,7 +233,7 @@ day-1  day-1.txt  day-10  day-1-backup.txt  day-2  day-3  day-4  day-5  day-6  d
 
 The _mv_ command is used both to change the name of a file and to move a file into a different directory.
 
-Let's have more file in the 10-days-of-code folder. We can use _touch_ command to create files.
+Let's have more files in the 10-days-of-code folder. We can use the _touch_ command to create files.
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ touch day-2.txt day-3.txt day-4.txt day-5.txt
@@ -221,7 +242,7 @@ day-1      day-10          day-2      day-3      day-4      day-5      day-6  da
 day-1.txt  day-1-backup.txt  day-2.txt  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 ```
 
-Now, let's rename the day-2.txt to second-day.txt using _mv_ command.
+Now, let's rename the day-2.txt to second-day.txt using the _mv_ command.
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ mv day-2.txt second-day.txt
@@ -243,7 +264,7 @@ day-1.txt  day-2           day-3.txt  day-4.txt  day-5.txt  day-7  day-9  second
 
 ### Moving file and directory
 
-The _mv_ and _cp_ commands can be used to put files into a directory. The _cp_ move the copy of the file or the folder to another folder, however mv just move it without copying.
+The _mv_ and _cp_ commands can be used to put files into a directory. The _cp_ moves the copy of the file or the folder to another folder, however, mv just move it without copying.
 Let's move the day-1.txt day-1 folder.
 
 ```sh
@@ -256,7 +277,7 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code/day-1$ ls
 day-1.txt
 ```
 
-Let's try to move a file using _cp_ command. Let's move the day-1-backup.txt to day-1 folder
+Let's try to move a file using the _cp_ command. Let's move the day-1-backup.txt to day-1 folder
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-git/10-days-of-code
@@ -276,8 +297,8 @@ day-1             day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9    second
 day-1-backup.txt  day-3  day-4      day-5      day-6      day-8  day-ten
 ```
 
-The copied version of day-1-backup.txt moved to day-1 folder.
-Now lets create multiple backup files first and move them to backup folder
+The copied version of day-1-backup.txt moved to a day-1 folder.
+Now let's create multiple backup files first and move them to a backup folder
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ mkdir backups
@@ -304,7 +325,7 @@ day-1-backup.txt  day-2-backup.txt  day-3-backup.txt
 
 ### Delete file and directory
 
-Let's remove file using _rm_ command. Let's remove day-1-backup.txt file from day-1 folder.
+Let's remove the file using the _rm_ command. Let's remove the day-1-backup.txt file from the day-1 folder.
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code
@@ -354,7 +375,7 @@ backups    backups-3  day-2  day-3.txt  day-4.txt  day-5.txt  day-7  day-9
 backups-2  day-1      day-3  day-4      day-5      day-6      day-8  second-day.txt
 ```
 
-Now the backups-3 has files and neither the _rm_ nor the _rmdir_ delete it. Therefore, we can use multiple command to delete it. Let's try it with the following command.
+Now the backups-3 has files and neither the _rm_ nor the _rmdir_ deletes it. Therefore, we can use multiple commands to delete it. Let's try it with the following command.
 
 ```sh
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop/10-days-of-code$ rm -rf backups-3
@@ -371,15 +392,15 @@ _Congratulations! Now you knew basic command lines_
 
 Git is a version control software. In one way or the other you may need to use a git and a GitHub together.
 
-You need to use git and GitHub either to store your projects on the cloud or to collaborate with your team. This means it allows developers or writers to work on the same project even if they are located in a different locations.
+You need to use git and GitHub either to store your projects on the cloud or to collaborate with your team. This means it allows developers or writers to work on the same project even if they are located in different locations.
 
-A version control is a means of recording changes to a file or set of files over time so that you can recall specific versions later.
+Version control is a means of recording changes to a file or set of files over time so that you can recall specific versions later.
 
 If you prefer watching the tutorial click this [link](https://www.youtube.com/watch?v=9cCApTLb_Io&list=PLbvhRHYrmshSCAHZbibqh_px_LxnU54dk)
 
 ### 1. Install Git
 
-First you need to install the version control software, Git.
+First, you need to install the version control software, Git.
 
 - Git:
   Install [git](https://git-scm.com/downloads)
@@ -406,16 +427,16 @@ git config --global user.email 'youremail'
 
 ### 4. Create a local git repository
 
-On this step your will create a folder (directory) for your project. A project is just a simple folder that stores all the files related to a certain project. A local repository is a project or a folder which is on your computer.
+In this step, you will create a folder (directory) for your project. A project is just a simple folder that stores all the files related to a certain project. A local repository is a project or a folder that is on your computer.
 
-If you Git bash is not opened, go to start and type git bash. Git terminal will popup on Windows devices. If it is MasOS just open the Mac terminal. On the terminal write:
+If your Git bash is not opened, go to start and type git bash. Git terminal will popup on Windows devices. If it is MasOS just open the Mac terminal. On the terminal write:
 
 ```shell
 mkdir project_name
 cd project_name
 ```
 
-By the way, you can also create the folders the usual way using on the GUI(Graphical User Interface) of the Windows or Mac.
+By the way, you can also create the folders the usual way using on the GUI(Graphical User Interface) of Windows or Mac.
 
 ### 5. Initialize Git
 
@@ -429,8 +450,8 @@ Once, the repository is initialized git tracks the changes in the files and fold
 
 ### 6. Add file to the staging area
 
-File can be added to the staging area in multiple ways.
-To add single file, we use the _git add_ command followed by a file name
+The file can be added to the staging area in multiple ways.
+To add a single file, we use the _git add_ command followed by a file name
 
 ```shell
    git add filename
@@ -442,7 +463,7 @@ To add multiple files using their file names using the command _git add_ followe
    git add filename1 filename2
 ```
 
-Sometimes, we may make a lots of changes and adding file one by one is tiring and not product. Therefore, we can use a short and product way. The _git add_ command followed by a dot allows to add files and folders at once to the stage area. Remember, there is a space between the add and the dot.
+Sometimes, we may make a lot of changes, and adding files one by one is tiring and not product. Therefore, we can use a short and product way. The _git add_ command followed by a dot allows adding files and folders at once to the stage area. Remember, there is a space between the add and the dot.
 
 To add all files and folders at once
 
@@ -458,21 +479,21 @@ To add all files and folders at once
 
 ### 8. Commit the changes
 
-Commit means taking a snapshot or a copy of your file at that point of time.You may associate it with as saving a file with a new name (save as).
+Commit means taking a snapshot or a copy of your file at that point in time. You may associate it with saving a file with a new name (save as).
 
 ```shell
    git commit -m 'your message'
 ```
 
-Your commit message has to be associated with the changes or modification you make.
+Your commit message has to be associated with the changes or modifications you make.
 
 ### 9. Git log
 
-The _git log_ command allows to know the commit history of the project
+The _git log_ command allows knowing the commit history of the project
 
 ### 10. Git check out
 
-We can identify the commit id of each commit using the _git log_ command. Then we can make use use of this id to retire any previous commit.
+We can identify the commit id of each commit using the _git log_ command. Then we can make use of this id to retire any previous commit.
 
 ```sh
 git checkout commit-id
@@ -480,8 +501,8 @@ git checkout commit-id
 
 ### 11. Creating a branch
 
-You can create copy of the master using branch. You built an awesome application. You like to keep this awesome application as it is but you like to add some features.
-This is the time, you need branching the master. Branch is the copy of the master at branching instant. After branching, the branch and the master they don't see each other. You can create as many branches as you want.
+You can create a copy of the master using a branch. You built an awesome application. You like to keep this awesome application as it is but you like to add some features.
+This is the time, you need branching the master. The branch is the copy of the master at branching instant. After branching, the branch and the master don't see each other. You can create as many branches as you want.
 
 To create a branch:
 
@@ -525,7 +546,7 @@ Go to [GitHub](https://github.com/) and create a repository by click the plus ic
 
 ### 14. Connecting git with remote repository
 
-In this step you will connect your local git repository with your remote GitHub repository
+In this step, you will connect your local git repository with your remote GitHub repository
 
 ```shell
     git remote add origin remote_repository_ul
@@ -544,7 +565,7 @@ Before you push(upload), please commits any changes and if it is ready push your
 
 ### 16. Merge
 
-When you work on an individual project or a team project you may have different branches. Mostly you will have master(main), develop and other branches.Then you will merge other branches to your develop and your develop to master. It is possible to merge any branches. For instance lets merge feature branch to develop
+When you work on an individual project or a team project you may have different branches. Mostly you will have a master(main), develop and other branches. Then you will merge other branches to your develop and your develop to master. It is possible to merge any branches. For instance, lets merge feature branch to develop
 
 ```shell
     git checkout develop
@@ -555,7 +576,7 @@ Using the above code, now the develop and feature branches do have the same cont
 
 ### 17. Pull
 
-If your team merge new features to the develop. Then you will be behind, now you need to make your project to current stage by pulling from develop
+If your team merges new features to the develop, then you will be behind, now you need to make your project to the current stage by pulling from develop
 
 ```shell
     git checkout yourbranch
@@ -570,7 +591,7 @@ If your team merge new features to the develop. Then you will be behind, now you
 
 If you are a sole developer that works by yourself then you can test the _git pull_ command by modifying some of the files from your remote repository and pull it using the _git pull_ command.
 
-_Congratulations! Now, you have solid foundation of Git and GitHub_
+_Congratulations! Now, you have a solid foundation of Git and GitHub_
 
 ## Git cheat sheet:
 
@@ -636,9 +657,9 @@ Every GitHub repository has a wiki page. A wiki page allows you to write or docu
 
 ## GitHub markdown
 
-Markdown file can be used to write a documentation or anything. The markdown file extension is .md
+Markdown files can be used to write documentation or anything. The markdown file extension is .md
 
-Markdown is an HTML like markup language that allows to write text and render it on browser. If you are familiar with HTML, you pick the syntax of markdown in a matter of minutes.
+Markdown is an HTML-like markup language that allows to write text and render it on a browser. If you are familiar with HTML, you pick the syntax of markdown in a matter of minutes.
 Follow this [link](https://guides.github.com/features/mastering-markdown/)to learn about markdown
 
 # Day 4
