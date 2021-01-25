@@ -13,21 +13,28 @@
     - [Moving file and directory](#moving-file-and-directory)
     - [Delete file and directory](#delete-file-and-directory)
 - [Day 2](#day-2)
-  - [Git Command](#git-command)
-    - [git config](#git-config)
-    - [git init](#git-init)
-    - [git status](#git-status)
-    - [git log](#git-log)
-    - [git add](#git-add)
-    - [git commit](#git-commit)
-    - [git remote add](#git-remote-add)
-    - [git push](#git-push)
-    - [git pull](#git-pull)
-    - [git branch](#git-branch)
-    - [git checkout](#git-checkout)
-    - [git merge](#git-merge)
+  - [Git and GitHub](#git-and-github)
+    - [1. Install Git](#1-install-git)
+    - [2. Checking status of the repository](#2-checking-status-of-the-repository)
+    - [3. Configure your name and your email](#3-configure-your-name-and-your-email)
+    - [4. Create a local git repository](#4-create-a-local-git-repository)
+    - [5. Initialize Git](#5-initialize-git)
+    - [6. Add file to the staging area](#6-add-file-to-the-staging-area)
+    - [7. Unstage a file](#7-unstage-a-file)
+    - [8. Commit the changes](#8-commit-the-changes)
+    - [9. Git log](#9-git-log)
+    - [10. Git check out](#10-git-check-out)
+    - [11. Creating a branch](#11-creating-a-branch)
+    - [12. Create account on GitHub](#12-create-account-on-github)
+    - [13. Create Repository on GitHub](#13-create-repository-on-github)
+    - [14. Connecting git with remote repository](#14-connecting-git-with-remote-repository)
+    - [15. Push](#15-push)
+    - [16. Merge](#16-merge)
+    - [17. Pull](#17-pull)
+  - [Git cheat sheet:](#git-cheat-sheet)
     - [pull request](#pull-request)
 - [Day 3](#day-3)
+  - [Advanced git features](#advanced-git-features)
   - [GitHub page](#github-page)
   - [GitHub wiki](#github-wiki)
   - [GitHub markdown](#github-markdown)
@@ -35,11 +42,6 @@
   - [Collaborating on GitHub](#collaborating-on-github)
   - [GitHub workflow](#github-workflow)
 - [Day 5](#day-5)
-- [Day 6](#day-6)
-- [Day 7](#day-7)
-- [Day 8](#day-8)
-- [Day 9](#day-9)
-- [Day 10](#day-10)
 
 # Day 1
 
@@ -365,41 +367,279 @@ _Congratulations! Now you knew basic command lines_
 
 # Day 2
 
-## Git Command
+## Git and GitHub
 
-### git config
+Git is a version control software. In one way or the other you may need to use a git and a GitHub together.
 
-### git init
+You need to use git and GitHub either to store your projects on the cloud or to collaborate with your team. This means it allows developers or writers to work on the same project even if they are located in a different locations.
 
-### git status
+A version control is a means of recording changes to a file or set of files over time so that you can recall specific versions later.
 
-### git log
+If you prefer watching the tutorial click this [link](https://www.youtube.com/watch?v=9cCApTLb_Io&list=PLbvhRHYrmshSCAHZbibqh_px_LxnU54dk)
 
-### git add
+### 1. Install Git
 
-### git commit
+First you need to install the version control software, Git.
 
-### git remote add
+- Git:
+  Install [git](https://git-scm.com/downloads)
 
-### git push
+### 2. Checking status of the repository
 
-### git pull
+The _git status_ command allows you to know the status of the project:
+If it is
 
-### git branch
+- initiated
+- modified
+- staged
 
-### git checkout
+We can write the command _git status_ at any time. It is a means to to check what is happening on your project.
 
-### git merge
+### 3. Configure your name and your email
+
+Open the Git bash if your device is Windows, or open the Mac terminal if your device is MacOS and then write the following commands
+
+```shell
+git config --global user.name 'yourname'
+git config --global user.email 'youremail'
+```
+
+### 4. Create a local git repository
+
+On this step your will create a folder (directory) for your project. A project is just a simple folder that stores all the files related to a certain project. A local repository is a project or a folder which is on your computer.
+
+If you Git bash is not opened, go to start and type git bash. Git terminal will popup on Windows devices. If it is MasOS just open the Mac terminal. On the terminal write:
+
+```shell
+mkdir project_name
+cd project_name
+```
+
+By the way, you can also create the folders the usual way using on the GUI(Graphical User Interface) of the Windows or Mac.
+
+### 5. Initialize Git
+
+After creating a new local repository or in an existing local repository, initialize the repository by the following command:
+
+```shell
+   git init
+```
+
+Once, the repository is initialized git tracks the changes in the files and folders of the project.
+
+### 6. Add file to the staging area
+
+File can be added to the staging area in multiple ways.
+To add single file, we use the _git add_ command followed by a file name
+
+```shell
+   git add filename
+```
+
+To add multiple files using their file names using the command _git add_ followed by file names
+
+```shell
+   git add filename1 filename2
+```
+
+Sometimes, we may make a lots of changes and adding file one by one is tiring and not product. Therefore, we can use a short and product way. The _git add_ command followed by a dot allows to add files and folders at once to the stage area. Remember, there is a space between the add and the dot.
+
+To add all files and folders at once
+
+```shell
+   git add .
+```
+
+### 7. Unstage a file
+
+```shell
+    git reset HEAD filename
+```
+
+### 8. Commit the changes
+
+Commit means taking a snapshot or a copy of your file at that point of time.You may associate it with as saving a file with a new name (save as).
+
+```shell
+   git commit -m 'your message'
+```
+
+Your commit message has to be associated with the changes or modification you make.
+
+### 9. Git log
+
+The _git log_ command allows to know the commit history of the project
+
+### 10. Git check out
+
+We can identify the commit id of each commit using the _git log_ command. Then we can make use use of this id to retire any previous commit.
+
+```sh
+git checkout commit-id
+```
+
+### 11. Creating a branch
+
+You can create copy of the master using branch. You built an awesome application. You like to keep this awesome application as it is but you like to add some features.
+This is the time, you need branching the master. Branch is the copy of the master at branching instant. After branching, the branch and the master they don't see each other. You can create as many branches as you want.
+
+To create a branch:
+
+- Only to create branch
+
+```shell
+    git checkout  branch-name
+```
+
+To create branch:
+
+- To create and checkout to the branch at the same time:
+
+```shell
+    git checkout -b branch-name
+```
+
+To switch between branches:
+
+```shell
+    git checkout main
+    git checkout branch-name
+```
+
+To list down all the branches:
+
+```shell
+    git branch
+```
+
+### 12. Create account on GitHub
+
+Now, create an account on GitHub and sign in using your emails and password
+
+- GitHub
+  Sign up on [GitHub](https://github.com/)
+
+### 13. Create Repository on GitHub
+
+Go to [GitHub](https://github.com/) and create a repository by click the plus icon on the top right corner.
+
+### 14. Connecting git with remote repository
+
+In this step you will connect your local git repository with your remote GitHub repository
+
+```shell
+    git remote add origin remote_repository_ul
+```
+
+The word origin could be any word. It is a means to assign the repository URL.
+If this is step is passed without error, you are ready to push it to your remote GitHub repository. Push means actually uploading what you have on your local to remote repository.
+
+### 15. Push
+
+Before you push(upload), please commits any changes and if it is ready push your files to your remote GitHub repository using the following command.
+
+```shell
+    git push -u origin master
+```
+
+### 16. Merge
+
+When you work on an individual project or a team project you may have different branches. Mostly you will have master(main), develop and other branches.Then you will merge other branches to your develop and your develop to master. It is possible to merge any branches. For instance lets merge feature branch to develop
+
+```shell
+    git checkout develop
+    git merge feature
+```
+
+Using the above code, now the develop and feature branches do have the same content
+
+### 17. Pull
+
+If your team merge new features to the develop. Then you will be behind, now you need to make your project to current stage by pulling from develop
+
+```shell
+    git checkout yourbranch
+    git pull origin develop
+```
+
+```sh
+    git checkout develop
+    git merge yourbranch
+    git push -u origin develop
+```
+
+If you are a sole developer that works by yourself then you can test the _git pull_ command by modifying some of the files from your remote repository and pull it using the _git pull_ command.
+
+_Congratulations! Now, you have solid foundation of Git and GitHub_
+
+## Git cheat sheet:
+
+Here you have the basic git commands which might be useful:
+
+```shell
+git --version     // to check the version
+git help          // To get help from git
+git help commit   // To get commit help
+
+git init          // Initilaizing git repository on local machine
+
+git config --list // to check what is configured
+git config        // to get information about configuration
+git config --global user.name "username" //Configuring git user name
+git config --global user.email "email" //Configuring git user email
+
+git add filename
+git add first.txt # adding only one file
+git add second.txt third.txt // to add multiple file
+git add . //To add all the files and folders to the staging area
+
+git commit -m 'commit message' // after staging using add
+git commit -a -m 'commit message' // staging using a and commiting
+git commit -am 'commit message' // staging and committing
+
+git commit -am "Message" #Grab every thing in the working copy and -a allows to skip the staging copy
+git log  // To see the history on the repository
+git log --author ="name" #To check change by specific user
+git status  //To check changes or status of the file
+
+
+git diff #Compare workin copy in the repository
+git diff --staged # Compare files in the staging area
+
+git rm filename
+git mv filename1 filename2
+git mv filename foldernam/filename2
+git commit -am "This skip the stage process"
+git checkout -- filename #To get working copy back
+git reset  HEAD filename // removes from the staging area/unstage
+git checkout 01e7ba -- filename # Tracking the differentversion of the project
+git remote add anyname repositoryUrl
+git push -u remote master // to push the file into github
+git checkout 01e7ba -- filename
+git remote add anyname repositoryUrl
+```
 
 ### pull request
 
 # Day 3
 
+## Advanced git features
+
 ## GitHub page
+
+Every GitHub repository allows you to generate a URL of your project. For instance, this a country project GitHub page.
 
 ## GitHub wiki
 
+Every GitHub repository has a wiki page. A wiki page allows you to write or document.
+![](./images/wiki.png)
+
 ## GitHub markdown
+
+Markdown file can be used to write a documentation or anything. The markdown file extension is .md
+
+Markdown is an HTML like markup language that allows to write text and render it on browser. If you are familiar with HTML, you pick the syntax of markdown in a matter of minutes.
+Follow this [link](https://guides.github.com/features/mastering-markdown/)to learn about markdown
 
 # Day 4
 
@@ -408,13 +648,3 @@ _Congratulations! Now you knew basic command lines_
 ## GitHub workflow
 
 # Day 5
-
-# Day 6
-
-# Day 7
-
-# Day 8
-
-# Day 9
-
-# Day 10
