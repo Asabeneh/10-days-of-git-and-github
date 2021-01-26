@@ -730,7 +730,7 @@ After you select the master, a save button will appear and click save.
 
 After saving, a GitHub page URL will be generated automatically. That is your URL for that specific project.
 
-![](./images/github-page-save.png)
+![](./images/github-page-link.png)
 
 # Day 5
 

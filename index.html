@@ -2,6 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A step by step guide learn basics of command lines, Git and GitHub, GitHub workflow"
+    />
+    <meta
+      name="keywords"
+      content="Git, GitHub, Command lines, Git bash, terminal, Web development, DevOps"
+    />
+    <meta name="author" content="Asabeneh Yetayeh" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -14,10 +23,16 @@
       * {
         box-sizing: border-box;
       }
+
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden !important;
+      }
       body {
         margin: 0;
-        overflow-x: hidden;
         color: #1c1313;
+        word-wrap: break-word;
       }
       header {
         background-color: #24292e;
@@ -41,25 +56,41 @@
       .header-title {
         text-align: center;
         text-transform: uppercase;
+        /* transition: color 3s;
+        transition-timing-function: ease-in;
+        background-color: rgba(204, 189, 189, 0.25);
+        padding: 25px; */
+      }
+      sub a {
+        color: white;
+        text-decoration: none;
       }
       img {
         max-width: 100%;
       }
-      footer {
-        background-color: #24292e;
-        color: white;
-        padding: 25px;
-        text-align: center;
-      }
+
       main {
         width: 70%;
         margin: 50px auto;
+      }
+      pre {
+        overflow-x: auto;
+        background-color: rgb(114, 108, 108);
+        background-color: #24292e;
+        color: white;
+        padding: 10px;
       }
       .fa-arrow-alt-circle-up,
       .fa-arrow-alt-circle-down {
         margin-top: 25px;
         color: rgb(133, 132, 129);
         font-size: 30px;
+      }
+      footer {
+        background-color: #24292e;
+        color: white;
+        padding: 25px;
+        text-align: center;
       }
       @media (max-width: 758px) {
         main {
@@ -944,7 +975,7 @@ git remote <span class="hljs-keyword">add</span> anyname repositoryUrl
           After saving, a GitHub page URL will be generated automatically. That
           is your URL for that specific project.
         </p>
-        <p><img src="./images/github-page-save.png" alt="" /></p>
+        <p><img src="./images/github-page-link.png" alt="" /></p>
         <h1 id="day-5">Day 5</h1>
         <h2 id="documenting-on-github">Documenting on GitHub</h2>
         <h2 id="github-markdown">GitHub Markdown</h2>
@@ -992,5 +1023,28 @@ git remote <span class="hljs-keyword">add</span> anyname repositoryUrl
         </div>
       </footer>
     </div>
+
+    <!-- <script>
+      const hexaColor = () => {
+        let str = '0123456789abcdef'
+        let color = ''
+        for (let i = 0; i < 6; i++) {
+          let index = Math.floor(Math.random() * str.length)
+          color += str[index]
+        }
+        return '#' + color
+      }
+      const h1 = document.querySelector('h1')
+      let content
+
+      setInterval(() => {
+        content = h1.textContent
+          .split('')
+          .map(
+            (letter) => `<span style="color:${hexaColor()}">${letter}</span>`
+          )
+        h1.innerHTML = content.join(' ')
+      }, 3000)
+    </script> -->
   </body>
 </html>
