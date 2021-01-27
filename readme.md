@@ -56,7 +56,7 @@
     - [18. Git clone](#18-git-clone)
     - [19. Rename Branch](#19-rename-branch)
     - [20. Deleting Branch](#20-deleting-branch)
-    - [21. Renaming commit](#21-renaming-commit)
+    - [21. The .gitignore file](#21-the-gitignore-file)
   - [Git cheat sheet:](#git-cheat-sheet)
 - [Day 3](#day-3)
   - [Git repository user interface features](#git-repository-user-interface-features)
@@ -649,7 +649,18 @@ or
 git push <remote_name> --delete <branch_name>
 ```
 
-### 21. Renaming commit
+### 21. The .gitignore file
+
+Any file you committed could be pushed to a remote repository but sometimes you may not want to push everything you have on your local repository. For instance sensitive data such as email, password, bank account, API Keys and others. Therefore, any files or folders that is listed on the .ignore file will not be tracked by Git. Create a .ignore file on the top level of your project directory, on this file put file names or folder you would like to ignore
+
+The .ignore file
+
+```sh
+test
+personal-data
+example.txt
+sensitive-info.txt
+```
 
 _Congratulations! Now, you have a solid foundation of Git and GitHub_
 

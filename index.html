@@ -29,30 +29,36 @@
         max-width: 100%;
         overflow-x: hidden !important;
       }
+
       body {
         margin: 0;
         color: #1c1313;
         word-wrap: break-word;
       }
+
       header {
         background-color: #24292e;
         color: white;
         padding: 25px;
         text-align: center;
       }
+
       .day {
         text-transform: uppercase;
         color: black;
         font-weight: 600;
       }
+
       li > a {
         text-decoration: none;
       }
+
       li > a,
       li > a:active,
       li > a:visited {
         color: #1c1313;
       }
+
       .header-title {
         text-align: center;
         text-transform: uppercase;
@@ -61,10 +67,12 @@
         background-color: rgba(204, 189, 189, 0.25);
         padding: 25px; */
       }
+
       sub a {
         color: white;
         text-decoration: none;
       }
+
       img {
         max-width: 100%;
       }
@@ -73,6 +81,7 @@
         width: 70%;
         margin: 50px auto;
       }
+
       pre {
         overflow-x: auto;
         background-color: rgb(114, 108, 108);
@@ -80,18 +89,21 @@
         color: white;
         padding: 10px;
       }
+
       .fa-arrow-alt-circle-up,
       .fa-arrow-alt-circle-down {
         margin-top: 25px;
         color: rgb(133, 132, 129);
         font-size: 30px;
       }
+
       footer {
         background-color: #24292e;
         color: white;
         padding: 25px;
         text-align: center;
       }
+
       @media (max-width: 758px) {
         main {
           width: 95%;
@@ -100,6 +112,7 @@
       }
     </style>
   </head>
+
   <body>
     <div id="wrapper">
       <header>
@@ -883,9 +896,14 @@ Asabeneh<span class="hljs-variable">@DESKTOP</span>-KGC1AKC MINGW64 ~<span class
         <p>or</p>
         <pre><code class="lang-sh">git push <span class="hljs-symbol">&lt;remote_name&gt;</span> --<span class="hljs-keyword">delete</span> <span class="hljs-symbol">&lt;branch_name&gt;</span>
 </code></pre>
-        <h3 id="21-renaming-commit">21. Renaming commit</h3>
-        It is possible to rename a commit using
-        <em>git commit --amend -m "New commit message"</em> command
+        <h3 id="21-the-gitignore-file">21. The .gitignore file</h3>
+<p>Any file you committed could be pushed to a remote repository but sometimes you may not want to push everything you have on your local repository. For instance sensitive data such as email, password, bank account, API Keys and others. Therefore, any files or folders that is listed on the .ignore file will not be tracked by Git. Create a .ignore file on the top level of your project directory, on this file put file names or folder you would like to ignore</p>
+<p>The .ignore file</p>
+<pre><code class="lang-sh"><span class="hljs-keyword">test
+</span>personal-data
+example.txt
+sensitive-info.txt
+</code></pre>
 
         <p>
           <em
