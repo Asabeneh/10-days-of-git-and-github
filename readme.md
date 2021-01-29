@@ -668,7 +668,7 @@ _Congratulations! Now, you have a solid foundation of Git and GitHub_
 
 Here you have the basic git commands which might be useful:
 
-```shell
+```bash
 git --version     // Check the version
 git help          // Get help from git
 git help commit   // Get help for the commit command
