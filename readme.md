@@ -501,9 +501,15 @@ Your commit message has to be associated with the changes or modifications you m
 
 ### 9. Git log
 
-The _git log_ command allows knowing the commit history of the project
+The _git log_ command allows knowing the commit history of the project. It list down all the commit history
 
-### 10. Git check out
+### 10. Git log --oneline
+The **git log --oneline** command allows to list minified log history
+
+### 11. Git log -<limit>
+For instance, this  **git log --5** command list 5 commit history.
+
+### 12. Git check out
 
 We can identify the commit id of each commit using the _git log_ command. Then we can make use of this id to retire any previous commit.
 
@@ -511,9 +517,9 @@ We can identify the commit id of each commit using the _git log_ command. Then w
 git checkout commit-id
 ```
 
-### 11. Creating a branch
+### 13. Creating a branch
 
-You can create a copy of the master using a branch. You built an awesome application. You like to keep this awesome application as it is but you like to add some features.
+We can create a copy of the master(main) using a branch. You built an awesome application. You like to keep this awesome application as it is but you like to add some features.
 This is the time, you need branching the master. The branch is the copy of the master at branching instant. After branching, the branch and the master don't see each other. You can create as many branches as you want.
 
 To create a branch:
@@ -521,10 +527,8 @@ To create a branch:
 - Only to create branch
 
 ```shell
-    git checkout  branch-name
+    git branch  branch-name
 ```
-
-To create branch:
 
 - To create and checkout to the branch at the same time:
 
@@ -545,18 +549,18 @@ To list down all the branches:
     git branch
 ```
 
-### 12. Create account on GitHub
+### 14. Create account on GitHub
 
 Now, create an account on GitHub and sign in using your emails and password
 
 - GitHub
   Sign up on [GitHub](https://github.com/)
 
-### 13. Create Repository on GitHub
+### 15. Create Repository on GitHub
 
 Go to [GitHub](https://github.com/) and create a repository by click the plus icon on the top right corner.
 
-### 14. Connecting git with remote repository
+### 16. Connecting git with remote repository
 
 In this step, you will connect your local git repository with your remote GitHub repository
 
@@ -567,7 +571,7 @@ In this step, you will connect your local git repository with your remote GitHub
 The word origin could be any word. It is a means to assign the repository URL.
 If this is step is passed without error, you are ready to push it to your remote GitHub repository. Push means actually uploading what you have on your local to remote repository.
 
-### 15. Push
+### 17. Push
 
 Before you push(upload), please commits any changes and if it is ready push your files to your remote GitHub repository using the following command.
 
@@ -575,7 +579,7 @@ Before you push(upload), please commits any changes and if it is ready push your
     git push -u origin master
 ```
 
-### 16. Merge
+### 18. Merge
 
 When you work on an individual project or a team project you may have different branches. Mostly you will have a master(main), develop and other branches. Then you will merge other branches to your develop and your develop to master. It is possible to merge any branches. For instance, lets merge feature branch to develop
 
@@ -586,7 +590,7 @@ When you work on an individual project or a team project you may have different 
 
 Using the above code, now the develop and feature branches do have the same content
 
-### 17. Pull
+### 19. Pull
 
 If your team merges new features to the develop, then you will be behind, now you need to make your project to the current stage by pulling from develop
 
@@ -603,7 +607,7 @@ If your team merges new features to the develop, then you will be behind, now yo
 
 If you are a sole developer that works by yourself then you can test the _git pull_ command by modifying some of the files from your remote repository and pull it using the _git pull_ command.
 
-### 18. Git clone
+### 20. Git clone
 
 GitHub allows to download a project using a URL. It is the same as downloading by clicking a download button from a website. To clone, go to desktop or any location and write the command _git clone URL_.
 
@@ -614,7 +618,7 @@ Asabeneh@DESKTOP-KGC1AKC MINGW64 ~$ cd Desktop
 Asabeneh@DESKTOP-KGC1AKC MINGW64 ~/Desktop$ git clone https://github.com/Asabeneh/10-days-of-git-and-github.git
 ```
 
-### 19. Rename Branch
+### 21. Rename Branch
 
 To rename a current branch
 
@@ -628,7 +632,7 @@ To rename any branch
 git branch -m <oldname> <newname>
 ```
 
-### 20. Deleting Branch
+### 22. Deleting Branch
 
 To delete a local branch
 
@@ -649,7 +653,7 @@ or
 git push <remote_name> --delete <branch_name>
 ```
 
-### 21. The .gitignore file
+### 23. The .gitignore file
 
 Any file you committed could be pushed to a remote repository but sometimes you may not want to push everything you have on your local repository. For instance sensitive data such as email, password, bank account, API Keys and others. Therefore, any files or folders that is listed on the .ignore file will not be tracked by Git. Create a .ignore file on the top level of your project directory, on this file put file names or folder you would like to ignore
 
@@ -662,6 +666,14 @@ example.txt
 sensitive-info.txt
 ```
 
+### 24 Forking
+A forking is a process of owning other repository. After you clicked on fork button of a certain repository you will see that that repository became in your repository list. You can try by clicking the fork button on this repository. 
+
+Every repository that has some content in it has an active fork button on the right top corner. 
+![fork](./images/fork.png)
+
+After forking, we can clone the repository and work on the cloned version of the project. After modifiying the original we can push to the forked verion of the repository. In addition, we can send a pull request to the original repo to contribute on the project.
+
 _Congratulations! Now, you have a solid foundation of Git and GitHub_
 
 ## Git cheat sheet:
@@ -672,7 +684,6 @@ Here you have the basic git commands which might be useful:
 git --version     # Check the version
 git help          # Get help from git
 git help commit   # Get help for the commit command
-
 git config        # Get information about configuration
 git config --list # Check all what is configured
 git config --global user.name "username" # Configuring git user name
@@ -690,6 +701,8 @@ git commit -m "commit message" # Write a commit message after staging
 git commit -am "commit message" # Grab everything & skip the stage process
 
 git log  # See the history on the repository
+git log --oneline
+git log -<limit> 
 git log --author ="name" # To check change by specific user
 git log --graph # Visualize the history
 
@@ -709,13 +722,19 @@ git checkout <commit-id> -- filename #
 git rm filename1 # Delete one tracked file
 git mv filename1 filename2 # Delete tracked file(s)
 git mv filename1 foldername/filename1 # Move file to a folder
+
+git branch # to list branches
+git branch branch-name # to create a branch
+git checkout branch-name # to checkout to a certain branch
+git checkout -b branch-name # to create a branch and checkout at the same time
+git merge branch-name # to merge a branch to the current branch
 ```
 
 # Day 3
 
 ## Git repository user interface features
 
-Familiarize yourself to GitHub account and repository available features.
+Familiarize yourself with your GitHub account and available repository features.
 Git has account setting and repository setting. Navigate through the available features.
 
 Check the available repository features by clicking each buttons.
@@ -723,6 +742,10 @@ Check the available repository features by clicking each buttons.
 ![](./images/github-repository-ui_1.png)
 
 Check what is available on your GitHub account settings
+- watch this repository
+- Give start to this repository
+- fork this repository
+- clonge this repository
 
 ![](./images/github-repository-ui_2.png)
 
@@ -756,16 +779,34 @@ Follow this [link](https://guides.github.com/features/mastering-markdown/) to le
 
 ## GitHub wiki
 
-Every GitHub repository has a wiki page. A wiki page allows you to write or document.
+Every GitHub public repository has a wiki page. A wiki page allows you to write or document.
 ![](./images/wiki.png)
 
 # Day 6
 
-## Advanced git features
+## Collaborating on GitHub
+You can learn how to collaborate by adding some best educational resouces link in the category below
+#### Development
+Front End
+- HTML
+- CSS
+- JavaScript
+- Sass
+- React
+- Redux
+Back End
+- Node
+- MongoDB
+- SQL
+#### Data Analysis, Scicene
+#### Mobile App Development
+#### Cloud 
+### DevOps
+#### Machine Learning
 
 # Day 7
 
-## Collaborating on GitHub
+## Advanced git features
 
 # Day 8
 
