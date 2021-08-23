@@ -45,18 +45,21 @@
     - [7. Unstage a file](#7-unstage-a-file)
     - [8. Commit the changes](#8-commit-the-changes)
     - [9. Git log](#9-git-log)
-    - [10. Git check out](#10-git-check-out)
-    - [11. Creating a branch](#11-creating-a-branch)
-    - [12. Create account on GitHub](#12-create-account-on-github)
-    - [13. Create Repository on GitHub](#13-create-repository-on-github)
-    - [14. Connecting git with remote repository](#14-connecting-git-with-remote-repository)
-    - [15. Push](#15-push)
-    - [16. Merge](#16-merge)
-    - [17. Pull](#17-pull)
-    - [18. Git clone](#18-git-clone)
-    - [19. Rename Branch](#19-rename-branch)
-    - [20. Deleting Branch](#20-deleting-branch)
-    - [21. The .gitignore file](#21-the-gitignore-file)
+    - [10. Git log --oneline](#10-git-log---oneline)
+    - [11. Git log -<limit>](#11-git-log--limit)
+    - [12. Git check out](#12-git-check-out)
+    - [13. Creating a branch](#13-creating-a-branch)
+    - [14. Create account on GitHub](#14-create-account-on-github)
+    - [15. Create Repository on GitHub](#15-create-repository-on-github)
+    - [16. Connecting git with remote repository](#16-connecting-git-with-remote-repository)
+    - [17. Push](#17-push)
+    - [18. Merge](#18-merge)
+    - [19. Pull](#19-pull)
+    - [20. Git clone](#20-git-clone)
+    - [21. Rename Branch](#21-rename-branch)
+    - [22. Deleting Branch](#22-deleting-branch)
+    - [23. The .gitignore file](#23-the-gitignore-file)
+    - [24 Forking](#24-forking)
   - [Git cheat sheet:](#git-cheat-sheet)
 - [Day 3](#day-3)
   - [Git repository user interface features](#git-repository-user-interface-features)
@@ -67,9 +70,9 @@
   - [GitHub Markdown](#github-markdown)
   - [GitHub wiki](#github-wiki)
 - [Day 6](#day-6)
-  - [Advanced git features](#advanced-git-features)
-- [Day 7](#day-7)
   - [Collaborating on GitHub](#collaborating-on-github)
+- [Day 7](#day-7)
+  - [Advanced git features](#advanced-git-features)
 - [Day 8](#day-8)
   - [GitHub workflow](#github-workflow)
 - [Day 9](#day-9)
@@ -836,7 +839,7 @@ Git and GitHub
 JavaScript
 </summary>
 <li>
-<a href=""></a>
+<a href="https://github.com/Asabeneh/30-Days-Of-JavaScript">30 Days of JavaScript</a>
 </li>
 </details>
 
@@ -874,7 +877,7 @@ Python
 </summary>
 
 <li>
-<a href=""></a>
+<a href="https://github.com/Asabeneh/30-Days-Of-Python">30 Days Of Python</a>
 </li>
 </details>
 
