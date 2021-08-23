@@ -970,6 +970,15 @@ DevOps
 </li>
 </details>
 
+<details>
+<summary>
+YouTube Videos
+</summary>
+<li>
+<a href="https://youtube.com">Link to Youtube</a>
+</li>
+</details>
+
 ----
 # Day 7
 
