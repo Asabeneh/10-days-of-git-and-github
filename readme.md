@@ -785,25 +785,189 @@ Every GitHub public repository has a wiki page. A wiki page allows you to write 
 # Day 6
 
 ## Collaborating on GitHub
-You can learn how to collaborate by adding some best educational resouces link in the category below
-#### Development
-Front End
-- HTML
-- CSS
-- JavaScript
-- Sass
-- React
-- Redux
-Back End
-- Node
-- MongoDB
-- SQL
-#### Data Analysis, Scicene
-#### Mobile App Development
-#### Cloud 
-### DevOps
-#### Machine Learning
+You can learn how to collaborate by adding links of best educational resouces on the category below. If the category is not exist, you create a new category. 
 
+<details>
+  <summary>
+  Command Lines
+  </summary>
+  <ol>
+  <li>
+<a href=""></a>
+</li>
+  </ol>
+</details>
+
+<details>
+<summary>
+Git and GitHub
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+  <summary>
+  HTML
+  </summary>
+</details>
+
+<details>
+  <summary>
+  CSS
+  </summary>
+  <li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+  <summary>
+  SaSS
+  </summary>
+  <li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+JavaScript
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+React
+</summary>
+<li>
+<a href="https://github.com/Asabeneh/30-Days-Of-React">30DaysOfReact</a>
+</li>
+</details>
+
+<details>
+<summary>
+ReactNative
+</summary>
+<li>
+<li>
+<a href=""></a>
+</li>
+</details>
+<details>
+
+<summary>
+Redux
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+Python
+</summary>
+
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+NumPy
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+Pandas
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+Matplotlib
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+Data Analysis
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+Data Science
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+Machine Learning
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+Linux
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+<details>
+<summary>
+Cloud
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+Machine Learning
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+DevOps
+</summary>
+<li>
+<a href=""></a>
+</li>
+</details>
+
+----
 # Day 7
 
 ## Advanced git features
