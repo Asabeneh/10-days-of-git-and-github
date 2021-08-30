@@ -985,10 +985,10 @@ YouTube Videos
 </details>
 <details>
 <summary>
-Whats App
+Regular expressions
 </summary>
 <li>
-<a href="https://www.whatsapp.com/download/?lang=en">Download WhatsApp</a>
+<a href="https://regexone.com/">Regular expressions</a>
 </li>
 </details>
 
