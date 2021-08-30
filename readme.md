@@ -988,6 +988,15 @@ Whats App
 </li>
 </details>
 
+<details>
+<summary>
+Project R
+</summary>
+<li>
+<a href="https://www.r-project.org/">Project R, an option for Python for data analysis</a>
+</li>
+</details>
+
 ----
 # Day 7
 
