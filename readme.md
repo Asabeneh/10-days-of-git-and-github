@@ -978,7 +978,11 @@ YouTube Videos
 <a href="https://youtube.com">Link to Youtube</a>
 </li>
 </details>
-
+</summary>
+<li>
+<a href="https://youtu.be/bY6m6_IIN94">Socratica Python Series</a>
+</li>
+</details>
 <details>
 <summary>
 Whats App
