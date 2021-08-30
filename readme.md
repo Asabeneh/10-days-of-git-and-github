@@ -988,6 +988,16 @@ Whats App
 </li>
 </details>
 
+
+<details>
+<summary>
+TeleGram
+</summary>
+<li>
+<a href="https://telegram.org/">Download Telegram</a>
+</li>
+</details>
+
 ----
 # Day 7
 
