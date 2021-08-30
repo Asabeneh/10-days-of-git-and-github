@@ -988,6 +988,15 @@ Whats App
 </li>
 </details>
 
+<details>
+<summary>
+Whats App
+</summary>
+<li>
+<a href="https://www.foreca.fi/">Weather forecast from Foreca</a>
+</li>
+</details>
+
 ----
 # Day 7
 
