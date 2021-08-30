@@ -990,7 +990,7 @@ Whats App
 
 <details>
 <summary>
-Whats App
+Foreca weather forecast
 </summary>
 <li>
 <a href="https://www.foreca.fi/">Weather forecast from Foreca</a>
