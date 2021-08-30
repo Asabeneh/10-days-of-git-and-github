@@ -990,10 +990,10 @@ Whats App
 
 <details>
 <summary>
-Foreca weather forecast
+Project R
 </summary>
 <li>
-<a href="https://www.foreca.fi/">Weather forecast from Foreca</a>
+<a href="https://www.r-project.org/">Project R, an option for Python for data analysis</a>
 </li>
 </details>
 
