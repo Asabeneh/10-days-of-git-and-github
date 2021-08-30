@@ -979,6 +979,15 @@ YouTube Videos
 </li>
 </details>
 
+<details>
+<summary>
+Whats App
+</summary>
+<li>
+<a href="https://www.whatsapp.com/download/?lang=en">Download WhatsApp</a>
+</li>
+</details>
+
 ----
 # Day 7
 
