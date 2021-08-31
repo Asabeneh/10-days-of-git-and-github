@@ -813,6 +813,7 @@ Git and GitHub
 <details>
   <summary>
   HTML
+  <a href="https://htmlreference.io/">HTML Reference</a>
   </summary>
 </details>
 
