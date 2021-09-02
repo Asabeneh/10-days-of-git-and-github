@@ -71,6 +71,7 @@
   - [GitHub wiki](#github-wiki)
 - [Day 6](#day-6)
   - [Collaborating on GitHub](#collaborating-on-github)
+    - [Educational Resources](#educational-resources)
 - [Day 7](#day-7)
   - [Advanced git features](#advanced-git-features)
 - [Day 8](#day-8)
@@ -486,6 +487,11 @@ To add all files and folders at once
    git add .
 ```
 
+To add and commit at the same time
+```sh
+  git commit -am 'commit message'
+```
+
 ### 7. Unstage a file
 
 ```shell
@@ -788,8 +794,13 @@ Every GitHub public repository has a wiki page. A wiki page allows you to write 
 # Day 6
 
 ## Collaborating on GitHub
-You can learn how to collaborate by adding links of best educational resouces on the category below. If the category is not exist, you create a new category. 
+GitHub made open-source collaboration very easy. You can collaborate to any open-souce GitHub repository by forking the repository. In this section, let's learn how to make collaborate on an open source project:
+1. First Fork the [10-days-of-git-and-github](https://github.com/Asabeneh/10-days-of-git-and-github) repository
+2. After forking, clone this repository on your desktop
+3. Add your favorite educational links on Education Resouces categories. You can learn how to collaborate by adding links of best educational resouces on the category below. If the category is not exist, you create a new category. 
 
+
+### Educational Resources
 <details>
   <summary>
   Command Lines
@@ -886,7 +897,7 @@ Python
 NumPy
 </summary>
 <li>
-<a href=""></a>
+<a href="https://github.com/Asabeneh/numpy">NumPy</a>
 </li>
 </details>
 
@@ -895,7 +906,7 @@ NumPy
 Pandas
 </summary>
 <li>
-<a href=""></a>
+<a href="https://github.com/Asabeneh/pandas">Pandas</a>
 </li>
 </details>
 
@@ -904,16 +915,24 @@ Pandas
 Matplotlib
 </summary>
 <li>
+<a href="https://github.com/Asabeneh/matplotlib"> Data Visualization with Matplotlib</a>
+</li>
+</details>
+<details>
+<summary>
+Data Science
+</summary>
+<li>
 <a href=""></a>
 </li>
 </details>
 
 <details>
 <summary>
-Data Analysis
+Git and GitHub
 </summary>
 <li>
-<a href=""></a>
+<a href="https://github.com/Asabeneh/10-days-of-git-and-github">10 Days Of Git and GitHub</a>
 </li>
 </details>
 
