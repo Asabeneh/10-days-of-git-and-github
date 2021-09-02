@@ -824,6 +824,7 @@ Git and GitHub
 <details>
   <summary>
   HTML
+  <a href="https://htmlreference.io/">HTML Reference</a>
   </summary>
 </details>
 
@@ -986,6 +987,37 @@ DevOps
 </summary>
 <li>
 <a href=""></a>
+</li>
+</details>
+
+<details>
+<summary>
+YouTube Videos
+</summary>
+<li>
+<a href="https://youtube.com">Link to Youtube</a>
+</li>
+</details>
+</summary>
+<li>
+<a href="https://youtu.be/bY6m6_IIN94">Socratica Python Series</a>
+</li>
+</details>
+<details>
+<summary>
+Regular expressions
+</summary>
+<li>
+<a href="https://regexone.com/">Regular expressions</a>
+</li>
+</details>
+
+<details>
+<summary>
+Project R
+</summary>
+<li>
+<a href="https://www.r-project.org/">Project R, an option for Python for data analysis</a>
 </li>
 </details>
 
