@@ -1021,6 +1021,15 @@ Project R
 </li>
 </details>
 
+<details>
+<summary>
+Project S
+</summary>
+<li>
+<a href="">Project S</a>
+</li>
+</details>
+
 ----
 # Day 7
 
