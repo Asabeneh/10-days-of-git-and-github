@@ -1030,10 +1030,10 @@ Project R
 
 <details>
 <summary>
-Project JS
+Weather App - JS Project
 </summary>
 <li>
-<a href="">Philip</a>
+<a href="https://www.youtube.com/watch?v=9XA7sQKpL2Y&t=9s&ab_channel=neo90sr">This Weather app was created using HTML, CSS & JS</a>
 </li>
 </details>
 
