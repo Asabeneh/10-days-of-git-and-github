@@ -488,6 +488,7 @@ To add all files and folders at once
 ```
 
 To add and commit at the same time
+
 ```sh
   git commit -am 'commit message'
 ```
@@ -513,10 +514,12 @@ Your commit message has to be associated with the changes or modifications you m
 The _git log_ command allows knowing the commit history of the project. It list down all the commit history
 
 ### 10. Git log --oneline
+
 The **git log --oneline** command allows to list minified log history
 
 ### 11. Git log -<limit>
-For instance, this  **git log --5** command list 5 commit history.
+
+For instance, this **git log --5** command list 5 commit history.
 
 ### 12. Git check out
 
@@ -676,9 +679,10 @@ sensitive-info.txt
 ```
 
 ### 24 Forking
-A forking is a process of owning other repository. After you clicked on fork button of a certain repository you will see that that repository became in your repository list. You can try by clicking the fork button on this repository. 
 
-Every repository that has some content in it has an active fork button on the right top corner. 
+A forking is a process of owning other repository. After you clicked on fork button of a certain repository you will see that that repository became in your repository list. You can try by clicking the fork button on this repository.
+
+Every repository that has some content in it has an active fork button on the right top corner.
 ![fork](./images/fork.png)
 
 After forking, we can clone the repository and work on the cloned version of the project. After modifiying the original we can push to the forked verion of the repository. In addition, we can send a pull request to the original repo to contribute on the project.
@@ -711,7 +715,7 @@ git commit -am "commit message" # Grab everything & skip the stage process
 
 git log  # See the history on the repository
 git log --oneline
-git log -<limit> 
+git log -<limit>
 git log --author ="name" # To check change by specific user
 git log --graph # Visualize the history
 
@@ -726,7 +730,7 @@ git checkout <commit-id> -- <path to file> # Checkout file from specific commit
 git remote -v  # View remote repository-Urls
 git remote add <remote name> repository-Url # Add a new remote
 git push -u remote master # Push the file into github
-git checkout <commit-id> -- filename # 
+git checkout <commit-id> -- filename #
 
 git rm filename1 # Delete one tracked file
 git mv filename1 filename2 # Delete tracked file(s)
@@ -751,6 +755,7 @@ Check the available repository features by clicking each buttons.
 ![](./images/github-repository-ui_1.png)
 
 Check what is available on your GitHub account settings
+
 - watch this repository
 - Give start to this repository
 - fork this repository
@@ -794,13 +799,15 @@ Every GitHub public repository has a wiki page. A wiki page allows you to write 
 # Day 6
 
 ## Collaborating on GitHub
+
 GitHub made open-source collaboration very easy. You can collaborate to any open-souce GitHub repository by forking the repository. In this section, let's learn how to make collaborate on an open source project:
+
 1. First Fork the [10-days-of-git-and-github](https://github.com/Asabeneh/10-days-of-git-and-github) repository
 2. After forking, clone this repository on your desktop
-3. Add your favorite educational links on Education Resouces categories. You can learn how to collaborate by adding links of best educational resouces on the category below. If the category is not exist, you create a new category. 
-
+3. Add your favorite educational links on Education Resouces categories. You can learn how to collaborate by adding links of best educational resouces on the category below. If the category is not exist, you create a new category.
 
 ### Educational Resources
+
 <details>
   <summary>
   Command Lines
@@ -1031,6 +1038,15 @@ Project S: This is Helen
 </details>
 
 ----
+Weather App - JS Project
+</summary>
+<li>
+<a href="https://www.youtube.com/watch?v=9XA7sQKpL2Y&t=9s&ab_channel=neo90sr">This Weather app was created using HTML, CSS & JS</a>
+</li>
+</details>
+
+---
+
 # Day 7
 
 ## Advanced git features
