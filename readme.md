@@ -1023,7 +1023,7 @@ Project R
 
 <details>
 <summary>
-Project S
+Project S: This is Helen
 </summary>
 <li>
 <a href="">Project S</a>
