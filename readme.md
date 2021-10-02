@@ -1037,8 +1037,10 @@ Project S: This is Helen
 </li>
 </details>
 
-----
+---
+
 Weather App - JS Project
+
 </summary>
 <li>
 <a href="https://www.youtube.com/watch?v=9XA7sQKpL2Y&t=9s&ab_channel=neo90sr">This Weather app was created using HTML, CSS & JS</a>
@@ -1046,6 +1048,15 @@ Weather App - JS Project
 </details>
 
 ---
+
+<details>
+<summary>
+PHP
+</summary>
+<li>
+<a href="https://github.com/thecodeholic/php-developer-roadmap">PHP developer road map</a>
+</li>
+</details>
 
 # Day 7
 
