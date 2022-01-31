@@ -869,6 +869,9 @@ React
 <li>
 <a href="https://github.com/Asabeneh/30-Days-Of-React">30DaysOfReact</a>
 </li>
+<li>
+  <a href="https://github.com/7kms/react-illustration-series">React-illustration-series</a>
+</li>
 </details>
 
 <details>
