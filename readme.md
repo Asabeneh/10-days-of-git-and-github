@@ -824,7 +824,7 @@ GitHub made open-source collaboration very easy. You can collaborate to any open
 Git and GitHub
 </summary>
 <li>
-<a href=""></a>
+<a href="https://github.com/firstcontributions/first-contributions">First Contributions</a>
 </li>
 </details>
 
@@ -859,6 +859,17 @@ JavaScript
 </summary>
 <li>
 <a href="https://github.com/Asabeneh/30-Days-Of-JavaScript">30 Days of JavaScript</a>
+<a href="https://github.com/zero-to-mastery/JS_Fun_Practice">JavaScript Fun Practice</a>
+<a href="https://github.com/getify/You-Dont-Know-JS">You Don't Know JS Yet (book series)</a>
+</li>
+</details>
+
+<details>
+<summary>
+TypeScript
+</summary>
+<li>
+<a href="https://github.com/type-challenges/type-challenges">TypeScript Challenges</a>
 </li>
 </details>
 
@@ -868,6 +879,12 @@ React
 </summary>
 <li>
 <a href="https://github.com/Asabeneh/30-Days-Of-React">30DaysOfReact</a>
+</li>
+<li>
+<a href="https://github.com/Asabeneh/React-For-Everyone">React For Everyone</a>
+</li>
+<li>
+<a href="https://github.com/learning-zone/react-interview-questions">React Interview Questions</a>
 </li>
 </details>
 
@@ -924,14 +941,6 @@ Matplotlib
 </summary>
 <li>
 <a href="https://github.com/Asabeneh/matplotlib"> Data Visualization with Matplotlib</a>
-</li>
-</details>
-<details>
-<summary>
-Data Science
-</summary>
-<li>
-<a href=""></a>
 </li>
 </details>
 
