@@ -864,6 +864,15 @@ JavaScript
 
 <details>
 <summary>
+TypeScript
+</summary>
+<li>
+<a href="https://github.com/type-challenges/type-challenges">TypeScript Challenges</a>
+</li>
+</details>
+
+<details>
+<summary>
 React
 </summary>
 <li>
