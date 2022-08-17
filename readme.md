@@ -859,6 +859,8 @@ JavaScript
 </summary>
 <li>
 <a href="https://github.com/Asabeneh/30-Days-Of-JavaScript">30 Days of JavaScript</a>
+<a href="https://github.com/zero-to-mastery/JS_Fun_Practice">JavaScript Fun Practice</a>
+<a href="https://github.com/getify/You-Dont-Know-JS">You Don't Know JS Yet (book series)</a>
 </li>
 </details>
 
