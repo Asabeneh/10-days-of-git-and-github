@@ -932,14 +932,6 @@ Matplotlib
 <a href="https://github.com/Asabeneh/matplotlib"> Data Visualization with Matplotlib</a>
 </li>
 </details>
-<details>
-<summary>
-Data Science
-</summary>
-<li>
-<a href=""></a>
-</li>
-</details>
 
 <details>
 <summary>
