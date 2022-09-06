@@ -821,6 +821,16 @@ GitHub made open-source collaboration very easy. You can collaborate to any open
 
 <details>
 <summary>
+Data Structures and Algorithms
+</summary>
+<ol><li><a href = 'https://youtu.be/rZ41y93P2Qo'></a>
+</li>
+</ol>
+</details>
+
+
+<details>
+<summary>
 Git and GitHub
 </summary>
 <li>
