@@ -868,6 +868,7 @@ React
 </summary>
 <li>
 <a href="https://github.com/Asabeneh/30-Days-Of-React">30DaysOfReact</a>
+<a href="https://react.dev/">React Docs</a>
 </li>
 </details>
 
