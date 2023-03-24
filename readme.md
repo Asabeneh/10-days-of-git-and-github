@@ -1031,10 +1031,10 @@ Project R
 
 <details>
 <summary>
-Project R
+Responsive Web Design free Certification Course
 </summary>
 <li>
-<a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design free Certification Course</a>
+<a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Link</a>
 </li>
 </details>
 
