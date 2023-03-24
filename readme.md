@@ -1034,7 +1034,7 @@ Project R
 Responsive Web Design free Certification Course
 </summary>
 <li>
-<a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Link</a>
+<a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">RWD By FreeCodecamp</a>
 </li>
 </details>
 
