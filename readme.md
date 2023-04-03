@@ -816,7 +816,7 @@ GitHub made open-source collaboration very easy. You can collaborate to any open
   </summary>
   <ol>
   <li>
-<a href=""></a>
+<a href="https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce"></a>
 </li>
   </ol>
 </details>
@@ -826,15 +826,15 @@ GitHub made open-source collaboration very easy. You can collaborate to any open
 Git and GitHub
 </summary>
 <li>
-<a href=""></a>
+<a href="https://github.com/Asabeneh/10-days-of-git-and-github#git-and-github"></a>
 </li>
 </details>
 
 <details>
   <summary>
   HTML
-  <a href="https://htmlreference.io/">HTML Reference</a>
   </summary>
+  <li><a href="https://htmlreference.io/">HTML Reference</a></li>
 </details>
 
 <details>
@@ -842,7 +842,7 @@ Git and GitHub
   CSS
   </summary>
   <li>
-<a href=""></a>
+<a href="https://www.w3schools.com/css/default.asp"></a>
 </li>
 </details>
 
@@ -851,7 +851,7 @@ Git and GitHub
   SaSS
   </summary>
   <li>
-<a href=""></a>
+<a href="https://sass-lang.com/"></a>
 </li>
 </details>
 
@@ -879,7 +879,7 @@ ReactNative
 </summary>
 <li>
 <li>
-<a href=""></a>
+<a href="https://reactnative.dev/"></a>
 </li>
 </details>
 <details>
@@ -888,7 +888,7 @@ ReactNative
 Redux
 </summary>
 <li>
-<a href=""></a>
+<a href="https://redux.js.org/"></a>
 </li>
 </details>
 
@@ -1039,8 +1039,10 @@ Project S: This is Helen
 </li>
 </details>
 
-----
+---
+
 Weather App - JS Project
+
 </summary>
 <li>
 <a href="https://www.youtube.com/watch?v=9XA7sQKpL2Y&t=9s&ab_channel=neo90sr">This Weather app was created using HTML, CSS & JS</a>
