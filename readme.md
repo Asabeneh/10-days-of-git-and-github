@@ -761,7 +761,7 @@ Check what is available on your GitHub account settings
 - watch this repository
 - Give start to this repository
 - fork this repository
-- clonge this repository
+- clone this repository
 
 ![](./images/github-repository-ui_2.png)
 
