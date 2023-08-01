@@ -74,6 +74,7 @@
     - [Educational Resources](#educational-resources)
 - [Day 7](#day-7)
   - [Advanced git features](#advanced-git-features)
+    -[Git stash](# Git stash: storing and managing temporary changes) 
 - [Day 8](#day-8)
   - [GitHub workflow](#github-workflow)
 - [Day 9](#day-9)
@@ -1052,6 +1053,58 @@ Weather App - JS Project
 # Day 7
 
 ## Advanced git features
+### 1. Git stash: storing and managing temporary changes
+
+ Stashing changes with `git stash` to temporarily save work-in-progress for later retrieval.
+
+Git stash is a handy command that allows you to store and manage temporary changes in Git. It is particularly useful when you need to switch to a different branch or work on a different task without committing your current changes.
+
+To stash your changes, simply run the following command:
+
+```
+git stash
+```
+
+Git will create a new stash that represents the current state of your working directory, including both staged and unstaged changes. It will revert your working directory to the last committed state.
+
+Once you have stashed your changes, you can switch to another branch or work on a different task. When you are ready to return to your original branch and reapply the changes, use the following command:
+
+```
+git stash apply
+```
+
+This command reapplies the most recent stash to your working directory. If you have multiple stashes, you can specify a stash identifier to apply a specific stash:
+
+```
+git stash apply stash@{n}
+```
+
+where `n` refers to the stash index.
+
+In some cases, you may want to apply the stash but also remove it from the stash list. In that case, use `git stash pop` instead of `git stash apply`:
+
+```
+git stash pop
+```
+
+This command applies the most recent stash and removes it from the stash list.
+
+If you want to view a list of stashes and their corresponding indices, you can use the command:
+
+```
+git stash list
+```
+
+To remove a specific stash, use:
+
+```
+git stash drop stash@{n}
+```
+
+where `n` refers to the stash index.
+
+Git stash is a flexible tool that allows you to temporarily store changes without committing them, making it easier to switch contexts and work on different branches or tasks.
+
 
 # Day 8
 
