@@ -814,12 +814,10 @@ GitHub made open-source collaboration very easy. You can collaborate to any open
 <summary>
 Command Lines
 </summary>
-<ol>
 <li>
-<a href="https://www.nano-editor.org/dist/latest/cheatsheet.html">Nano's shortcuts</a>
+<a href="https://www.nano-editor.org/dist/latest/cheatsheet.html">Nano's shortcuts</a>\
 <a href="https://simpletutorials.com/c/vim/uldvdk5l/simple-vim-reference">Simple Vim reference</a>
 </li>
-</ol>
 </details>
 
 <details>
@@ -929,15 +927,6 @@ Matplotlib
 </summary>
 <li>
 <a href="https://github.com/Asabeneh/matplotlib"> Data Visualization with Matplotlib</a>
-</li>
-</details>
-
-<details>
-<summary>
-Data Science
-</summary>
-<li>
-<a href=""></a>
 </li>
 </details>
 
