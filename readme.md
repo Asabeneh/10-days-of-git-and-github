@@ -1003,6 +1003,8 @@ YouTube Videos
 <a href="https://youtu.be/bY6m6_IIN94">Socratica Python Series</a>
 <li>
 <a href="https://www.youtube.com/watch?v=23Hamqyx-E0">Configuring VS Code as Git's default editor</a>
+<li>
+<a href="https://www.youtube.com/watch?v=FyAAIHHClqI&list=PLOVA8ViwZCvByARgBacbN-ooJVtfgbT-l&index=5">Introduction to Git - Branching and Merging</a>
 </li>
 </details>
 
