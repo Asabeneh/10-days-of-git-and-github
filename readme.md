@@ -1020,6 +1020,9 @@ Regular expressions
 <a href="https://regexone.com/">Regular expressions</a>
 </li>
 </details>
+<li>
+<a href="https://regexone.com/">Regex 101</a>
+</li>
 
 <details>
 <summary>
