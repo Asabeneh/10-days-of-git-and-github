@@ -880,7 +880,6 @@ React
 ReactNative
 </summary>
 <li>
-<li>
 <a href=""></a>
 </li>
 </details>
@@ -1000,7 +999,9 @@ YouTube Videos
 </summary>
 <li>
 <a href="https://youtube.com">Link to Youtube</a>
+<li>
 <a href="https://youtu.be/bY6m6_IIN94">Socratica Python Series</a>
+<li>
 <a href="https://www.youtube.com/watch?v=23Hamqyx-E0">Configuring VS Code as Git's default editor</a>
 </li>
 </details>
@@ -1011,6 +1012,7 @@ Regular Expressions
 </summary>
 <li>
 <a href="https://regexone.com/">Regular expressions</a>
+<li>
 <a href="https://regex101.com/">Regex 101</a>
 </li>
 </details>
