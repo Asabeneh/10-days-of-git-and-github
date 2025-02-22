@@ -815,7 +815,8 @@ GitHub made open-source collaboration very easy. You can collaborate to any open
 Command Lines
 </summary>
 <li>
-<a href="https://www.nano-editor.org/dist/latest/cheatsheet.html">Nano's shortcuts</a>\
+<a href="https://www.nano-editor.org/dist/latest/cheatsheet.html">Nano's shortcuts</a>
+<li>
 <a href="https://simpletutorials.com/c/vim/uldvdk5l/simple-vim-reference">Simple Vim reference</a>
 </li>
 </details>
