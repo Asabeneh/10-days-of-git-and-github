@@ -811,14 +811,14 @@ GitHub made open-source collaboration very easy. You can collaborate to any open
 ### Educational Resources
 
 <details>
-  <summary>
-  Command Lines
-  </summary>
-  <ol>
-  <li>
-<a href=""></a>
+<summary>
+Command Lines
+</summary>
+<li>
+<a href="https://www.nano-editor.org/dist/latest/cheatsheet.html">Nano's shortcuts</a>
+<li>
+<a href="https://simpletutorials.com/c/vim/uldvdk5l/simple-vim-reference">Simple Vim reference</a>
 </li>
-  </ol>
 </details>
 
 <details>
@@ -831,26 +831,28 @@ Git and GitHub
 </details>
 
 <details>
-  <summary>
-  HTML
-  <a href="https://htmlreference.io/">HTML Reference</a>
-  </summary>
+<summary>
+HTML
+</summary>
+<li>
+<a href="https://htmlreference.io/">HTML Reference</a>
+</li>
 </details>
 
 <details>
-  <summary>
-  CSS
-  </summary>
-  <li>
+<summary>
+CSS
+</summary>
+<li>
 <a href=""></a>
 </li>
 </details>
 
 <details>
-  <summary>
-  SaSS
-  </summary>
-  <li>
+<summary>
+SaSS
+</summary>
+<li>
 <a href=""></a>
 </li>
 </details>
@@ -877,7 +879,6 @@ React
 <summary>
 ReactNative
 </summary>
-<li>
 <li>
 <a href=""></a>
 </li>
@@ -928,14 +929,6 @@ Matplotlib
 <a href="https://github.com/Asabeneh/matplotlib"> Data Visualization with Matplotlib</a>
 </li>
 </details>
-<details>
-<summary>
-Data Science
-</summary>
-<li>
-<a href=""></a>
-</li>
-</details>
 
 <details>
 <summary>
@@ -951,7 +944,7 @@ Git and GitHub
 Data Science
 </summary>
 <li>
-<a href=""></a>
+<a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a>
 </li>
 </details>
 
@@ -972,6 +965,7 @@ Linux
 <a href=""></a>
 </li>
 </details>
+
 <details>
 <summary>
 Cloud
@@ -1005,19 +999,23 @@ YouTube Videos
 </summary>
 <li>
 <a href="https://youtube.com">Link to Youtube</a>
-</li>
-</details>
-</summary>
 <li>
 <a href="https://youtu.be/bY6m6_IIN94">Socratica Python Series</a>
+<li>
+<a href="https://www.youtube.com/watch?v=23Hamqyx-E0">Configuring VS Code as Git's default editor</a>
+<li>
+<a href="https://www.youtube.com/watch?v=FyAAIHHClqI&list=PLOVA8ViwZCvByARgBacbN-ooJVtfgbT-l&index=5">Introduction to Git - Branching and Merging</a>
 </li>
 </details>
+
 <details>
 <summary>
-Regular expressions
+Regular Expressions
 </summary>
 <li>
 <a href="https://regexone.com/">Regular expressions</a>
+<li>
+<a href="https://regex101.com/">Regex 101</a>
 </li>
 </details>
 
