@@ -1051,6 +1051,14 @@ Weather App - JS Project
 
 ## Advanced git features
 
+Git has many advanced features that can help you manage and optimize your workflow. Here are some of the most powerful ones:
+Interactive Rebase (git rebase -i)
+Allows you to edit, squash, reorder, or drop commits.
+Cherry-picking (git cherry-pick)
+Apply a specific commit from another branch.
+Bisect (git bisect)
+Helps find which commit introduced a bug.
+
 # Day 8
 
 ## GitHub workflow
