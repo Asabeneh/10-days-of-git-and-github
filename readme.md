@@ -826,7 +826,7 @@ Command Lines
 Git and GitHub
 </summary>
 <li>
-<a href=""></a>
+<a href="https://www.youtube.com/watch?v=RGOj5yH7evk&t=56s">Git & Github for beginners</a>
 </li>
 </details>
 
