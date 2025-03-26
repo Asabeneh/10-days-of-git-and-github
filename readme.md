@@ -761,7 +761,7 @@ Check what is available on your GitHub account settings
 - watch this repository
 - Give start to this repository
 - fork this repository
-- clonge this repository
+- clone this repository
 
 ![](./images/github-repository-ui_2.png)
 
@@ -872,6 +872,9 @@ React
 </summary>
 <li>
 <a href="https://github.com/Asabeneh/30-Days-Of-React">30DaysOfReact</a>
+</li>
+<li>
+  <a href="https://github.com/7kms/react-illustration-series">React-illustration-series</a>
 </li>
 </details>
 
