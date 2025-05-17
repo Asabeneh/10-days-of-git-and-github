@@ -872,6 +872,7 @@ React
 </summary>
 <li>
 <a href="https://github.com/Asabeneh/30-Days-Of-React">30DaysOfReact</a>
+<a href="https://react.dev/">React Docs</a>
 </li>
 </details>
 
@@ -1043,6 +1044,15 @@ Project R
 </summary>
 <li>
 <a href="https://www.r-project.org/">Project R, an option for Python for data analysis</a>
+</li>
+</details>
+
+<details>
+<summary>
+Responsive Web Design free Certification Course
+</summary>
+<li>
+<a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">RWD By FreeCodecamp</a>
 </li>
 </details>
 
