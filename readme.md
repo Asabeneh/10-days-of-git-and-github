@@ -46,7 +46,7 @@
     - [8. Commit the changes](#8-commit-the-changes)
     - [9. Git log](#9-git-log)
     - [10. Git log --oneline](#10-git-log---oneline)
-    - [11. Git log -<limit>](#11-git-log--limit)
+    - [11. Git log -](#11-git-log--)
     - [12. Git check out](#12-git-check-out)
     - [13. Creating a branch](#13-creating-a-branch)
     - [14. Create account on GitHub](#14-create-account-on-github)
@@ -60,7 +60,7 @@
     - [22. Deleting Branch](#22-deleting-branch)
     - [23. The .gitignore file](#23-the-gitignore-file)
     - [24 Forking](#24-forking)
-  - [Git cheat sheet:](#git-cheat-sheet)
+  - [Git cheat sheet](#git-cheat-sheet)
 - [Day 3](#day-3)
   - [Git repository user interface features](#git-repository-user-interface-features)
 - [Day 4](#day-4)
@@ -691,7 +691,7 @@ After forking, we can clone the repository and work on the cloned version of the
 
 _Congratulations! Now, you have a solid foundation of Git and GitHub_
 
-## Git cheat sheet:
+## Git cheat sheet
 
 Here you have the basic git commands which might be useful:
 
@@ -936,6 +936,24 @@ Git and GitHub
 </summary>
 <li>
 <a href="https://github.com/Asabeneh/10-days-of-git-and-github">10 Days Of Git and GitHub</a>
+</li>
+</details>
+
+<details>
+<summary>
+30 Days of SQL
+</summary>
+<li>
+<a href="https://github.com/Asabeneh/30DaysOfSQL">30 Days of SQL</a>
+</li>
+</details>
+
+<details>
+<summary>
+30 Days of GO
+</summary>
+<li>
+<a href="https://github.com/Asabeneh/30-Days-Of-Go">30 Days of GO</a>
 </li>
 </details>
 
