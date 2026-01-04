@@ -830,6 +830,9 @@ Git and GitHub
 <li>
 <a href="https://www.youtube.com/watch?v=RGOj5yH7evk&t=56s">Git & Github for beginners</a>
 </li>
+<li>
+<a href="https://git-scm.com/docs"> Git docs</a>
+</li>
 </details>
 
 <details>
@@ -1057,8 +1060,10 @@ Project S: This is Helen
 </li>
 </details>
 
-----
+---
+
 Weather App - JS Project
+
 </summary>
 <li>
 <a href="https://www.youtube.com/watch?v=9XA7sQKpL2Y&t=9s&ab_channel=neo90sr">This Weather app was created using HTML, CSS & JS</a>
